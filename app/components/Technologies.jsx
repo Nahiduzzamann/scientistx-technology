@@ -39,25 +39,25 @@ export default function Technologies() {
         <div>
           <div>
             <p className="mb-2">Programming Languages</p>
-            <div className="text-white flex flex-wrap gap-2 md:gap-5 border-t-2 border-t-[#1B75BC] py-4">
+            <div className="text-white flex flex-wrap gap-8 md:gap-12 border-t-2 border-t-[#1B75BC] py-4">
               <div className="">
-                <Image src={img1} alt="technology"></Image>
+                <Image className="h-10 md:h-17 w-10 md:w-17" src={img1} alt="technology"></Image>
                 <p className="text-center ">Swift</p>
               </div>
               <div className="">
-                <Image src={img2} alt="technology"></Image>
+                <Image  className="h-10 md:h-17 w-10 md:w-17" src={img2} alt="technology"></Image>
                 <p className="text-center ">JAVA</p>
               </div>
               <div className="">
-                <Image src={img3} alt="technology"></Image>
+                <Image  className="h-10 md:h-17 w-10 md:w-17" src={img3} alt="technology"></Image>
                 <p className="text-center ">TypeScript</p>
               </div>
               <div className="">
-                <Image src={img4} alt="technology"></Image>
+                <Image  className="h-10 md:h-17 w-10 md:w-17" src={img4} alt="technology"></Image>
                 <p className="text-center ">Python</p>
               </div>
               <div className="">
-                <Image src={img5} alt="technology"></Image>
+                <Image  className="h-10 md:h-17 w-10 md:w-17" src={img5} alt="technology"></Image>
                 <p className="text-center ">JavaScript</p>
               </div>
             </div>
