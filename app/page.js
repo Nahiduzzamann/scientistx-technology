@@ -1,117 +1,78 @@
 "use client";
 import { useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import StartBox from "./components/StartBox";
+import OurProject from "./components/OurProject";
 
 const Home = () => {
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-     
-        {/* Background layers */}
-        <ParallaxLayer offset={0} speed={0} factor={3}>
-          empty
-        </ParallaxLayer>
-
-        {/* Other background layers */}
-        <ParallaxLayer
-          offset={1}
-          speed={1}
-          style={{ backgroundColor: "#805E73" }}
-        />
-        <ParallaxLayer
-          offset={2}
-          speed={1}
-          style={{ backgroundColor: "#87BCDE" }}
-        />
-
-        {/* Content layers */}
-        <ParallaxLayer offset={0.5} speed={0.2} style={{ opacity: 0.8 }}>
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "white",
-              fontSize: "2em",
-            }}
-          >
-            Content for the first page
-          </div>
-        </ParallaxLayer>
-
-        {/* Other content layers */}
-        <ParallaxLayer offset={1.5} speed={-0.5} style={{ opacity: 0.6 }}>
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "white",
-              fontSize: "2em",
-            }}
-          >
-            Content for the second page
-          </div>
-        </ParallaxLayer>
-
-        {/* Navigation */}
-        <ParallaxLayer
-          offset={0.8}
-          speed={-0.1}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-          }}
-        >
-          <div
-            style={{
-              width: "200px",
-              height: "50px",
-              background: "rgba(255, 255, 255, 0.3)",
-              borderRadius: "10px",
-              textAlign: "center",
-              lineHeight: "50px",
-              color: "white",
-              fontSize: "1.2em",
-            }}
-          >
-            Scroll to Page 2
-          </div>
-        </ParallaxLayer>
-
-        {/* Other navigation */}
-        <ParallaxLayer
-          offset={1.8}
-          speed={0.1}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-          }}
-        >
-          <div
-            style={{
-              width: "200px",
-              height: "50px",
-              background: "rgba(255, 255, 255, 0.3)",
-              borderRadius: "10px",
-              textAlign: "center",
-              lineHeight: "50px",
-              color: "white",
-              fontSize: "1.2em",
-            }}
-          >
-            Scroll to Page 3
-          </div>
-        </ParallaxLayer>
-     
+    <div >
+      <ParallaxLayer
+        offset={0}
+        speed={0.5}
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        <div className=" max-w-[1500px] w-full ">
+          <StartBox/>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={1}
+        speed={0.5}
+        style={{ backgroundColor: "rgba(163, 163, 163, 0.317)" }}
+      />
+      <ParallaxLayer
+        offset={1}
+        speed={2}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "black",
+        }}
+      >
+        <OurProject/>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={2}
+        speed={0.5}
+        style={{ backgroundColor: "rgba(163, 163, 163, 0.317)" }}
+      />
+      <ParallaxLayer
+        offset={2}
+        speed={2}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+        }}
+      >
+        {/* <Post /> */}
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={3}
+        speed={1}
+        style={{ backgroundColor: "rgba(163, 163, 163, 0.317)" }}
+      />
+      <ParallaxLayer
+        offset={3}
+        speed={2}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+        }}
+      >
+        {/* <Graph /> */}
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={4}
+        speed={1}
+        style={{ backgroundColor: "rgba(163, 163, 163, 0.317)" }}
+      />
     </div>
   );
 };

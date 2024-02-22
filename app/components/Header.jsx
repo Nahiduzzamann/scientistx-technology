@@ -18,7 +18,7 @@ const Header = ({ open, setOpen, header }) => {
           overflow: "hidden",
           transition: " top 0.3s",
         }}
-        className="bg-[#5500ff21] w-full  px-5 py-2 hidden lg:block"
+        className="bg-[#275278] w-full  px-5 py-2 hidden lg:block"
       >
         <div className="flex mx-auto max-w-[1500px] justify-between">
           <div className="flex mr-2  font-thin text-[14px]">

@@ -4,9 +4,10 @@ import "./globals.css";
 import Header from "./components/Header";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Footer from "./components/Footer";
-import { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ParticlesBg from "particles-bg";
-import Graphic from '../public/Graphic.svg'
+import Graphic from "../public/Graphic.svg";
+import { useMediaQuery } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,26 +26,64 @@ const style = {
     backgroundSize: "cover",
     zIndex: -1,
     color: "#ffff",
-    backgroundColor:"#f7f7f74f"
-  }
+    backgroundColor: "#f7f7f74f",
+  },
 };
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, page }) {
   const parallaxRef = useRef();
+  const [open, setOpen] = useState(false);
+  const matches = useMediaQuery("(min-width: 1024px)");
+  const [prevScrollpos, setPrevScrollpos] = useState(0);
+  const [header, setHeader] = React.useState(true);
+  useEffect(() => {
+    if (matches) {
+      setOpen(false);
+    }
+  }, [matches]);
+  const scrollListener = () => {
+    const handleWheelEvent = () => {
+      const { container, current } = parallaxRef.current;
+      const scrollpercent =
+        current / (container.current.scrollHeight - window.innerHeight);
+      //updateScroll(scrollpercent)
+    };
+    window.addEventListener("wheel", handleWheelEvent);
+    return () => {
+      window.removeEventListener("wheel", handleWheelEvent);
+    };
+  };
+  useEffect(scrollListener, []);
+  const updateScroll = (val) => {
+    if (prevScrollpos > val) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+    setPrevScrollpos(val);
+  };
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
         <ParticlesBg type="lines" num={10} bg={style.canvas} />
-          <Header />
+        <div>
+          <Header header={header} open={open} setOpen={setOpen} />
           <Parallax
             ref={parallaxRef}
-            pages={4}
+            pages={page ? page : 5}
             style={{ top: "0", left: "0" }}
+            onScroll={(e) => {
+              console.log(e.currentTarget);
+            }}
           >
             {children}
-            
+            <ParallaxLayer
+              offset={page ? page - 1 : 4}
+              speed={page ? (page - 1) / 2 : 2}
+            >
+              <Footer />
+            </ParallaxLayer>
           </Parallax>
-          {/* <Footer /> */}
+
           {/* <BottomDrawer open={open} setOpen={setOpen} /> */}
         </div>
       </body>
