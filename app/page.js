@@ -14,7 +14,7 @@ const Home = () => {
       <ParallaxLayer
         offset={0}
         speed={1}
-        style={{ height: "100vh", display: "flex", justifyContent: "center" }}
+        style={{ height: "100vh"}}
       >
         <div >
           <StartBox />
