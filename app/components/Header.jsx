@@ -18,10 +18,10 @@ const Header = ({ open, setOpen, header }) => {
           overflow: "hidden",
           transition: " top 0.3s",
         }}
-        className="bg-[#275278] w-full  px-5 py-2 hidden lg:block"
+        className="bg-[#275278] w-full  py-2 hidden lg:block"
       >
-        <div className="flex mx-auto max-w-[1500px] justify-between">
-          <div className="flex mr-2  font-thin text-[14px]">
+        <div className="flex justify-between">
+          <div className="flex font-thin text-[14px]">
             <div className="flex items-center">
               icon
               <p className="ml-2">+8801761143991</p>
@@ -36,7 +36,7 @@ const Header = ({ open, setOpen, header }) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between mx-auto max-w-[1500px]">
+        <div className="flex items-center justify-between">
           <div
             style={{
               fontSize: "34px",
@@ -69,7 +69,7 @@ const Header = ({ open, setOpen, header }) => {
           left: 0,
           overflow: "hidden",
         }}
-        className=" bg-[#5500ff21] w-full lg:hidden px-2 py-1 flex justify-between items-center"
+        className=" bg-[#5500ff21] w-full lg:hidden py-1 flex justify-between items-center"
       >
         <div
           style={{

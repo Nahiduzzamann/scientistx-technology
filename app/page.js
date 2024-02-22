@@ -1,6 +1,5 @@
 "use client";
-import { useRef } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
 import StartBox from "./components/StartBox";
 import OurProject from "./components/OurProject";
 
@@ -13,7 +12,7 @@ const Home = () => {
         speed={0.5}
         style={{ display: "flex", justifyContent: "center" }}
       >
-        <div className=" max-w-[1500px] w-full ">
+        <div className=" w-full ">
           <StartBox/>
         </div>
       </ParallaxLayer>
