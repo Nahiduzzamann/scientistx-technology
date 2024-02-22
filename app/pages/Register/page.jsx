@@ -29,7 +29,7 @@ const Register = () => {
 
               <div>
                 <div class="flex items-center justify-between">
-                  <label for="password" class="block text-sm font-medium leading-6 text-blue-600">password</label>
+                  <label for="password" class="block text-sm font-medium leading-6 text-blue-600">Password</label>
                   
                 </div>
                 <div class="mt-2">
