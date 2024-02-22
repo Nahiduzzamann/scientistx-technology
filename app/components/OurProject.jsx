@@ -98,7 +98,7 @@ const RivewCart = ({ img, name, post, email, text1, text2 }) => {
     <div
       className=" shadow-md bg-[#1B75BC] rounded-md flex-col justify-left items-center flex-wrap p-6"
     >
-      <div className="flex-row">
+      <div className="flex items-center">
         <div className="flex-shrink-0">
           <Image className="h-30 w-30 " src={img} alt='OurProject' />
         </div>
@@ -110,16 +110,16 @@ const RivewCart = ({ img, name, post, email, text1, text2 }) => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4 mt-30">
         <p className="text-left">{text1}</p>
       </div>
 
-      <div className="ml-auto flex items-center">
+      <div className="ml-auto flex items-center mt-30">
         <div className="mr-2">
-          <Image className="h-30 w-30 " src={Icon} alt='OurProject' />
+          <Image className="h-50 w-50" src={Icon} alt='OurProject' />
         </div>
 
-        <p className="text-gray-600">{text2}</p>
+        <p className="">{text2}</p>
       </div>
     </div>
   );

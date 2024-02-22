@@ -7,6 +7,8 @@ import Svg2 from "./asset/svg2";
 import Svg3 from "./asset/Svg3";
 import Svg4 from "./asset/Svg4";
 
+import Link from "next/link";
+
 export default function StartBox() {
   const handleType = (count) => {
     // access word count number
@@ -76,9 +78,11 @@ export default function StartBox() {
               <br />
               <div className="">
                 <div className="flex  items-center gap-2 mt-6">
+                  <Link href='/Register'>
                   <button className="px-6 py-2 cursor-pointer rounded-sm  bg-[#1B75BC]">
                     Login/Registration
                   </button>
+                  </Link>
                   <Svg3></Svg3>
                 </div>
               </div>
