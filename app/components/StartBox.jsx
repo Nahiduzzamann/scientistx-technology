@@ -78,10 +78,10 @@ export default function StartBox() {
               <br />
               <div className="">
                 <div className="flex  items-center gap-2 mt-6">
-                  <Link href='/Register'>
-                  <button className="px-6 py-2 cursor-pointer rounded-sm  bg-[#1B75BC]">
+                  <Link  className="px-6 py-2 cursor-pointer rounded-sm  bg-[#1B75BC]" href='/pages/Register'>
+                  
                     Login/Registration
-                  </button>
+                 
                   </Link>
                   <Svg3></Svg3>
                 </div>
