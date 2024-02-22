@@ -5,10 +5,11 @@ import {
     SwipeableDrawer,
   } from "@mui/material";
 import Link from "next/link";
-
+import { CgMenuGridO } from "react-icons/cg";
 const Header = ({ open, setOpen, header }) => {
+
   return (
-    <div className=" ">
+    <div className="px-10 ">
       <div
         style={{
           position: "fixed",
@@ -18,7 +19,7 @@ const Header = ({ open, setOpen, header }) => {
           overflow: "hidden",
           transition: " top 0.3s",
         }}
-        className="bg-[#275278] w-full  py-2 hidden lg:block"
+        className="bg-[#275278] w-full md:px-10 py-2 hidden lg:block"
       >
         <div className="flex justify-between">
           <div className="flex font-thin text-[14px]">
@@ -69,7 +70,7 @@ const Header = ({ open, setOpen, header }) => {
           left: 0,
           overflow: "hidden",
         }}
-        className=" bg-[#5500ff21] w-full lg:hidden py-1 flex justify-between items-center"
+        className=" bg-[#5500ff21] w-full lg:hidden py-1 px-2 flex justify-between items-center"
       >
         <div
           style={{
@@ -86,8 +87,8 @@ const Header = ({ open, setOpen, header }) => {
             effectChange={0.7}
           />
         </div>
-        <div onClick={() => setOpen(true)}>
-        CgMenuGridO
+        <div>
+          <CgMenuGridO onClick={() => setOpen(true)} size={30} />
         </div>
       </div>
     </div>

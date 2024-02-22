@@ -14,12 +14,12 @@ export default function StartBox() {
     console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="lg:flex w-full justify-between h-full">
+    <div className="lg:flex w-full justify-between h-full md:px-10 px-2">
       <div className="w-full lg:hidden h-[100vw]">
         <Viewer />
       </div>
-      <div className=" max-w-[800px] px-5 py-2 h-full lg:flex items-center text-white">
-        <div>
+      <div className=" max-w-[800px] py-2 h-full lg:flex items-center text-white">
+        <div className="flex flex-col  items-center">
           <div className="lg:mb-20 mb-10">
             <ButterflyEffect></ButterflyEffect>
           </div>

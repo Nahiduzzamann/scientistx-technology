@@ -65,7 +65,7 @@ export default function RootLayout({ children, page }) {
     <html lang="en">
       <body className={inter.className}>
         <ParticlesBg type="lines" num={10} bg={style.canvas} />
-        <div>
+        <div className="">
           <Header header={header} open={open} setOpen={setOpen} />
           <Parallax
             ref={parallaxRef}
