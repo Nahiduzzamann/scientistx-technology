@@ -1,8 +1,10 @@
-'use client'
+"use client";
 import { ParallaxLayer } from "@react-spring/parallax";
 import StartBox from "./components/StartBox";
 import OurProject from "./components/OurProject";
 import { useRef } from "react";
+import Technologies from "./components/Technologies";
+import Partners from "./components/Partners";
 
 const Home = () => {
   const parallaxRef = useRef();
@@ -18,28 +20,19 @@ const Home = () => {
           <StartBox />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer
-        offset={1}
-        speed={1}
-        style={{ height: "100vh" }}
-      >
+      <ParallaxLayer offset={1} speed={1} style={{ height: "100vh" }}>
         <OurProject />
       </ParallaxLayer>
-      <ParallaxLayer
-        offset={2}
-        speed={0.5}
-        style={{ height: "100vh", backgroundColor: "rgba(163, 163, 163, 0.317)" }}
-      />
+
+      <ParallaxLayer offset={2} speed={1} style={{ height: "100vh" }}>
+        <Technologies></Technologies>
+      </ParallaxLayer>
       <ParallaxLayer
         offset={3}
         speed={1}
-        style={{ height: "100vh", backgroundColor: "rgba(163, 163, 163, 0.317)" }}
-      />
-      <ParallaxLayer
-        offset={4}
-        speed={1}
-        style={{ height: "100vh", backgroundColor: "rgba(163, 163, 163, 0.317)" }}
-      />
+        style={{
+          height: "100vh" }}
+      ><Partners></Partners></ParallaxLayer>
     </div>
   );
 };

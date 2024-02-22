@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Viewer from "./Animation";
@@ -9,20 +10,20 @@ import Svg4 from "./asset/Svg4";
 export default function StartBox() {
   const handleType = (count) => {
     // access word count number
-    console.log(count);
+    // console.log(count);
   };
 
   const handleDone = () => {
-    console.log(`Done after 5 loops!`);
+    // console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="lg:flex w-full justify-between h-full md:px-10 px-2">
+    <div className="lg:flex w-full justify-between h-full md:px-10 px-2 ">
       <div className="w-full lg:hidden lg:h-[100vw] h-[50vh] ">
         <Viewer />
       </div>
       <div className=" max-w-[800px] py-2 h-full lg:flex items-center text-white">
         <div className="">
-          <div className="lg:mb-20 mb-10 hidden md:block">
+          <div className="lg:mb-20 mb-10 hidden md:block mt-20">
             <ButterflyEffect></ButterflyEffect>
           </div>
           <div className="lg:mb-20 mb-10 md:hidden flex justify-center">
