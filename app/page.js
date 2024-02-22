@@ -10,13 +10,13 @@ const Home = () => {
   const parallaxRef = useRef();
 
   return (
-    <div style={{ height: "100vh", overflowY: "scroll" }} ref={parallaxRef}>
+    <div ref={parallaxRef}>
       <ParallaxLayer
         offset={0}
         speed={1}
         style={{ height: "100vh", display: "flex", justifyContent: "center" }}
       >
-        <div className="w-full">
+        <div >
           <StartBox />
         </div>
       </ParallaxLayer>
@@ -31,8 +31,11 @@ const Home = () => {
         offset={3}
         speed={1}
         style={{
-          height: "100vh" }}
-      ><Partners></Partners></ParallaxLayer>
+          height: "100vh",
+        }}
+      >
+        <Partners></Partners>
+      </ParallaxLayer>
     </div>
   );
 };

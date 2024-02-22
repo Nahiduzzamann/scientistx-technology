@@ -84,7 +84,6 @@ export default function RootLayout({ children, page }) {
             </ParallaxLayer>
           </Parallax>
 
-          {/* <BottomDrawer open={open} setOpen={setOpen} /> */}
         </div>
       </body>
     </html>
