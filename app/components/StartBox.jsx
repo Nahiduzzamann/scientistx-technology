@@ -3,6 +3,8 @@ import { Typewriter } from "react-simple-typewriter";
 import Viewer from "./Animation";
 import ButterflyEffect, { ButterflyEffect2 } from "./asset/butterflyEffect";
 import Svg2 from "./asset/svg2";
+import Svg3 from "./asset/Svg3";
+import Svg4 from "./asset/Svg4";
 
 export default function StartBox() {
   const handleType = (count) => {
@@ -15,13 +17,16 @@ export default function StartBox() {
   };
   return (
     <div className="lg:flex w-full justify-between h-full md:px-10 px-2">
-      <div className="w-full lg:hidden h-[100vw]">
+      <div className="w-full lg:hidden lg:h-[100vw] h-[50vh] ">
         <Viewer />
       </div>
       <div className=" max-w-[800px] py-2 h-full lg:flex items-center text-white">
-        <div className="flex flex-col  items-center">
-          <div className="lg:mb-20 mb-10">
+        <div className="">
+          <div className="lg:mb-20 mb-10 hidden md:block">
             <ButterflyEffect></ButterflyEffect>
+          </div>
+          <div className="lg:mb-20 mb-10 md:hidden flex justify-center">
+            <Svg4></Svg4>
           </div>
           <div className="flex gap-2">
             <div>
@@ -68,11 +73,18 @@ export default function StartBox() {
                 reasonable.
               </span>
               <br />
-              {/* <div className="w-full mt-6">
-            <button className="px-4 py-2 border cursor-pointer rounded-sm font-bold ">
-              Login/Registration
-            </button>
-          </div> */}
+              <div className="">
+                <div className="flex  items-center gap-2 mt-6">
+                  <button className="px-6 py-2 cursor-pointer rounded-sm  bg-[#1B75BC]">
+                    Login/Registration
+                  </button>
+                  <Svg3></Svg3>
+                </div>
+              </div>
+              <p>
+                Only login and registration features are available for
+                ScientistX Member’s
+              </p>
             </div>
           </div>
         </div>
