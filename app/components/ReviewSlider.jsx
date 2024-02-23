@@ -1,10 +1,16 @@
 "use client";
-import img5 from "../../public/img5.png"
+import img5 from "../../public/img5.png";
+
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+
+import img1 from "../../public/Our Partners 1.png";
+import img2 from "../../public/Our Partners 2.png";
+import img3 from "../../public/Our Partners 3.png";
+import img4 from "../../public/Our Partners 4.png";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -16,7 +22,7 @@ function SamplePrevArrow(props) {
   return <div style={{ ...style, display: "block" }} onClick={onClick} />;
 }
 
-const PartnerSlider= ({ imgData }) => {
+const PartnerSlider = () => {
   let sliderRef = useRef(null);
   if (sliderRef.current) {
     sliderRef.current.slickPlay();
@@ -26,6 +32,7 @@ const PartnerSlider= ({ imgData }) => {
       sliderRef.current.slickPause();
     }
   };
+
   var settings = {
     pauseOnFocus: true,
     nextArrow: <SampleNextArrow />,
@@ -62,26 +69,26 @@ const PartnerSlider= ({ imgData }) => {
       },
     ],
   };
+
+  const partnerImages = [img1, img2, img3, img4];
+
   return (
-   
-      <div className="slider-container">
-        <Slider
-          {...settings}
-          className=""
-        >
-          {
-            imgData?.map((img,i)=><Card img={img} key={i}></Card>)
-          }
-        </Slider>
-      </div>
-    
+    <div className="slider-container">
+      <Slider {...settings} className="">
+        {partnerImages.map((img, i) => (
+          <Card img={img} key={i}></Card>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
 export default PartnerSlider;
 
-const Card =({img})=>{
+const Card = ({ img }) => {
   return (
-    <div className="mx-2"><Image  className=" h-[100px] " src={img.img} alt="technology"></Image></div>
-  )
-}
+    <div className="mx-2">
+      <Image className="h-[100px]" src={img} alt="technology"></Image>
+    </div>
+  );
+};
