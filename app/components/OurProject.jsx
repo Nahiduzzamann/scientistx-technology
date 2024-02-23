@@ -38,7 +38,7 @@ const OurProject = () => {
           title={"Recent Projects"}
         />
       </div>
-      <div className="flex flex-col w-full items-center md:my-10 my-4">
+      <div className="flex flex-col w-full items-center md:my-20 my-10">
         <p className="text-[20px] font-medium text-[#ffffff]">Client Satisfactions</p>
         <div className="h-1 my-2 w-full max-w-[300px] bg-[#1B75BC]"></div>
       </div>

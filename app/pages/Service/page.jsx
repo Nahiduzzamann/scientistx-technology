@@ -6,10 +6,10 @@ import React from "react";
 
 export default function Service() {
   return (
-    <div className="container mx-auto">
+    <div className="">
       <ParallaxLayer offset={0} speed={2} >
-        <div>
-          <div className="flex flex-col w-full items-center py-4 md:py-8 lg:py-20">
+        <div className="container mx-auto">
+          <div className="flex flex-col w-full items-center py-20 md:py-32">
             <p className="text-[20px] font-medium text-[#ffffff]">
               Client Satisfactions
             </p>
