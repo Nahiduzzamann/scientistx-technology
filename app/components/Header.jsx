@@ -5,11 +5,13 @@ import { SwipeableDrawer } from "@mui/material";
 import Link from "next/link";
 import { CgMenuGridO } from "react-icons/cg";
 import { usePathname } from "next/navigation";
+import MobileNav from "./MobileNav";
 const Header = ({ open, setOpen, header }) => {
   const pathname = usePathname()
   return (
     <div className=" bg-[#275278] z-30 fixed w-full">
-      <div className=" container mx-auto py-2 hidden lg:block"
+      <MobileNav></MobileNav>
+      <div className=" container mx-auto py-2 hidden md:block"
       >
         <div className="flex w-full justify-between text-white items-center ">
           <div>
@@ -236,7 +238,7 @@ const Header = ({ open, setOpen, header }) => {
           left: 0,
           overflow: "hidden",
         }}
-        className="text-white bg-[#275278] w-full lg:hidden py-1 px-2 flex justify-between items-center"
+        className="text-white bg-[#275278] w-full md:hidden py-1 px-2 flex justify-between items-center"
       >
         <div
           style={{
