@@ -11,7 +11,7 @@ export default function Service() {
         <div className="container mx-auto">
           <div className="flex flex-col w-full items-center py-20 md:py-32">
             <p className="text-[20px] font-medium text-[#ffffff]">
-              Client Satisfactions
+            Services
             </p>
             <div className="h-1 my-2 w-full max-w-[300px] bg-[#1B75BC]"></div>
           </div>
