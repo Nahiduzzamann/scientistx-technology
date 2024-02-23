@@ -201,26 +201,26 @@ const Header = ({ open, setOpen, header }) => {
                 Service
               </Link>
               <Link
-                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/service' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
-                href="/"
+                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/pages/Product' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
+                href="/pages/Product"
               >
                 Products
               </Link>
               <Link
-                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/service' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
-                href="/"
+                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/pages/News' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
+                href="/pages/News"
               >
                 News
               </Link>
               <Link
-                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/service' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
-                href="/"
+                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/pages/Career' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
+                href="/pages/Career"
               >
                 Career
               </Link>
               <Link
-                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/service' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
-                href="/"
+                className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${pathname === '/pages/About' ? 'text-[#FFCA27] border-b border-b-[#FFCA27]' : ''}`}
+                href="/pages/About"
               >
                 About
               </Link>

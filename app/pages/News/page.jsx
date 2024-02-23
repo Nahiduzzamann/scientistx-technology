@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Service() {
+export default function News() {
   return (
     <div className='h-screen text-white text-4xl flex justify-center items-center'>
-      <h1>Service</h1>
+      <h1>News</h1>
     </div>
   )
 }
