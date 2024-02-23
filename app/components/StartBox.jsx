@@ -19,8 +19,9 @@ export default function StartBox() {
     // console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="lg:flex w-full justify-between h-full md:px-10 px-2 ">
-      <div className="w-full lg:hidden lg:h-[100vw] h-[50vh] ">
+    <div className="container mx-auto">
+      <div className="lg:flex w-full justify-between h-full  px-2 ">
+      <div className="w-full lg:hidden lg:h-[100vw] h-[30vh] ">
         <Viewer />
       </div>
       <div className=" max-w-[800px] py-2 h-full lg:flex items-center text-white">
@@ -97,6 +98,7 @@ export default function StartBox() {
       <div className="w-[630px] hidden lg:flex">
         <Viewer />
       </div>
+    </div>
     </div>
   );
 }
