@@ -40,7 +40,7 @@ const OurProject = () => {
       </div>
       <div className="flex flex-col w-full items-center md:my-10 my-4">
         <p className="text-[20px] font-medium text-[#ffffff]">Client Satisfactions</p>
-        <div className="h-1 my-2 w-full max-w-[500px] bg-[#1B75BC]"></div>
+        <div className="h-1 my-2 w-full max-w-[300px] bg-[#1B75BC]"></div>
       </div>
       <div className="w-full grid md:grid-cols-2 grid-cols-1 justify-center gap-2 mt-10">
         <RivewCart img={img1}

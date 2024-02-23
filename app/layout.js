@@ -75,7 +75,7 @@ export default function RootLayout({ children, page }) {
               console.log(e.currentTarget);
             }}
           >
-            {children}
+            <div className="md:mt-20 mt-16">{children}</div>
             <ParallaxLayer
               offset={page ? page - 1 : 4}
               speed={page ? (page - 1) / 2 : 2}
