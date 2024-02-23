@@ -8,19 +8,10 @@ import { usePathname } from "next/navigation";
 const Header = ({ open, setOpen, header }) => {
   const pathname = usePathname()
   return (
-    <div className="">
-      <div
-        style={{
-          position: "fixed",
-          zIndex: 1,
-          top: header ? 0 : -120,
-          left: 0,
-          overflow: "hidden",
-          transition: " top 0.3s",
-        }}
-        className="bg-[#275278] w-full py-2 hidden lg:block "
+    <div className=" bg-[#275278] z-30 fixed w-full">
+      <div className=" container mx-auto py-2 hidden lg:block"
       >
-        <div className="flex justify-between text-white items-center ">
+        <div className="flex w-full justify-between text-white items-center ">
           <div>
             <div className="flex gap-2">
               <svg
