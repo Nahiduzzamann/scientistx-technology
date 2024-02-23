@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 function MobileNav() {
   const pathname = usePathname();
   return (
-    <div className="flex rounded-l-md fixed bottom-0 right-0 bg-[#33333398] shadow shadow-[#00000033] md:hidden ">
+    <div className="flex rounded-l-md fixed bottom-0 right-0 bg-[#33333377] shadow shadow-[#00000033] md:hidden ">
       <div className="flex flex-col gap-8 justify-evenly mx-4 my-4 ">
         <Link href="/">
           <div
