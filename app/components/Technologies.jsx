@@ -34,7 +34,7 @@ import img28 from "../../public/linux-svgrepo-com.png";
 
 export default function Technologies() {
   return (
-    <div className="md:px-10 px-2">
+    <div className="container mx-auto px-2">
       <div className="md:flex text-white justify-between ">
         <div>
           <div className="md:mt-10 mt-4">
