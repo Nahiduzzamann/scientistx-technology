@@ -36,9 +36,9 @@ export default function StartBox() {
               <Svg2></Svg2>
             </div>
             <div className="">
-              <h1 className="text-xl text-justify tracking-wide">
-                Our services{" "}
-                <span className="font-bold text-pink-600">
+              <h1 className="text-[16px] font-bold text-justify tracking-wide">
+                Our services: <br />
+                <span className="font-normal text-[16px] text-[#FFCA27]">
                   {/* Style will be inherited from the parent element */}
                   <Typewriter
                     words={[
@@ -62,7 +62,7 @@ export default function StartBox() {
                 </span>
               </h1>
               <br />
-              <span className=" text-lg tracking-wide leading-8 line-clamp-6">
+              <span className="text-[16px] font-normal tracking-wide leading-8 line-clamp-6">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words which don't look even
@@ -77,8 +77,8 @@ export default function StartBox() {
               </span>
               <br />
               <div className="">
-                <div className="flex  items-center gap-2 mt-6">
-                  <Link  className="px-6 py-2 cursor-pointer rounded-sm  bg-[#1B75BC]" href='/pages/Register'>
+                <div className="flex  items-center gap-2">
+                  <Link  className="px-6 py-2 text-[16px] font-normal cursor-pointer rounded-sm  bg-[#1B75BC]" href='/pages/Register'>
                   
                     Login/Registration
                  
@@ -86,7 +86,7 @@ export default function StartBox() {
                   <Svg3></Svg3>
                 </div>
               </div>
-              <p>
+              <p className="mt-[14px] text-[14px] font-normal">
                 Only login and registration features are available for
                 ScientistX Member’s
               </p>
