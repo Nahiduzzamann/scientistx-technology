@@ -1,5 +1,4 @@
 "use client";
-import img5 from "../../public/img5.png";
 
 import React, { useRef } from "react";
 import Slider from "react-slick";
