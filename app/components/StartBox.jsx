@@ -24,7 +24,7 @@ export default function StartBox() {
       <div className=" w-full  lg:hidden lg:h-[100vw] h-[30vh] mt-[50px]">
         <Viewer />
       </div>
-      <div className=" max-w-[800px] py-2 h-full lg:flex items-center text-white">
+      <div className=" max-w-[800px] h-full lg:flex items-center text-white">
         <div className="">
           <div className="lg:mb-20  hidden md:block mt-20">
             <ButterflyEffect></ButterflyEffect>
@@ -63,7 +63,7 @@ export default function StartBox() {
                 </span>
               </h1>
               <br />
-              <span className="text-[16px] font-normal tracking-wide leading-8 line-clamp-6">
+              <p className="md:text-[16px] text-[14px] font-normal tracking-wide line-clamp-6">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
                 injected humour, or randomised words which don't look even
@@ -75,7 +75,7 @@ export default function StartBox() {
                 dictionary of over 200 Latin words, combined with a handful of
                 model sentence structures, to generate Lorem Ipsum which looks
                 reasonable.
-              </span>
+              </p>
               <br />
               <div className="">
                 <div className="flex  items-center gap-2">
