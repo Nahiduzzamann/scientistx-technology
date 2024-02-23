@@ -1,6 +1,6 @@
 "use client";
-import CardService from "@/app/components/CardService";
-import Svg6 from "@/app/components/asset/Svg6";
+import CardService from "../../components/CardService";
+import Svg6 from "../../components/asset/Svg6";
 import { ParallaxLayer } from "@react-spring/parallax";
 import React from "react";
 

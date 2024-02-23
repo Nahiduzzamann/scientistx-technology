@@ -1,6 +1,6 @@
 "use client";
-import CardService from "@/app/components/CardService";
-import Svg7 from "@/app/components/asset/Svg7";
+import CardService from "../../components/CardService";
+import Svg9 from "../../components/asset/Svg9";
 import { ParallaxLayer } from "@react-spring/parallax";
 import React from "react";
 
@@ -17,28 +17,28 @@ export default function Product() {
           <CardService
             route="Service"
               isButton={true}
-              img={<Svg7></Svg7>}
+              img={<Svg9></Svg9>}
               title="Casino Gambling"
               description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of dfaf afa dasfdasf sfa  safas ade asdras aw afasd asdrasdr"
             ></CardService>
           <CardService
             route="Service"
               isButton={true}
-              img={<Svg7></Svg7>}
+              img={<Svg9></Svg9>}
               title="Casino Gambling"
               description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of dfaf afa dasfdasf sfa  safas ade asdras aw afasd asdrasdr"
             ></CardService>
           <CardService
             route="Service"
               isButton={true}
-              img={<Svg7></Svg7>}
+              img={<Svg9></Svg9>}
               title="Casino Gambling"
               description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of dfaf afa dasfdasf sfa  safas ade asdras aw afasd asdrasdr"
             ></CardService>
           <CardService
             route="Service"
               isButton={true}
-              img={<Svg7></Svg7>}
+              img={<Svg9></Svg9>}
               title="Casino Gambling"
               description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of dfaf afa dasfdasf sfa  safas ade asdras aw afasd asdrasdr"
             ></CardService>
