@@ -21,15 +21,15 @@ export default function StartBox() {
   return (
     <div className="container mx-auto">
       <div className="lg:flex w-full justify-between h-full  px-2 ">
-      <div className="w-full lg:hidden lg:h-[100vw] h-[30vh] ">
+      <div className=" w-full  lg:hidden lg:h-[100vw] h-[30vh] mt-[50px]">
         <Viewer />
       </div>
       <div className=" max-w-[800px] py-2 h-full lg:flex items-center text-white">
         <div className="">
-          <div className="lg:mb-20 mb-10 hidden md:block mt-20">
+          <div className="lg:mb-20  hidden md:block mt-20">
             <ButterflyEffect></ButterflyEffect>
           </div>
-          <div className="lg:mb-20 mb-10 md:hidden flex justify-center">
+          <div className="lg:mb-20 md:hidden flex justify-center">
             <Svg4></Svg4>
           </div>
           <div className="flex gap-2">
