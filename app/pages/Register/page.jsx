@@ -4,7 +4,7 @@ import styles from './Register.module.css';
 
 import Image from "next/image";
 
-import Img from '../../../public/scientistx 1.png';
+import Img from '../../components/asset/Svg7.svg';
 import Link from 'next/link';
 
 const Register = () => {

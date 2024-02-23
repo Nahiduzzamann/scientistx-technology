@@ -13,22 +13,22 @@ const Home = () => {
     <div ref={parallaxRef}>
       <ParallaxLayer
         offset={0}
-        speed={1}
+        speed={8}
         style={{ height: "100vh"}}
       >
         <div >
           <StartBox />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={1} style={{ height: "100vh" }}>
+      <ParallaxLayer offset={0.99} speed={1} style={{  height: "100vh" }}>
         <OurProject />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={2} speed={1} style={{ height: "100vh" }}>
+      <ParallaxLayer offset={1.3} speed={1} style={{ height: "100vh" }}>
         <Technologies></Technologies>
       </ParallaxLayer>
       <ParallaxLayer
-        offset={3}
+        offset={2}
         speed={1}
         style={{
           height: "100vh",
