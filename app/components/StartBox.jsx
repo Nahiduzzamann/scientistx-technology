@@ -3,7 +3,7 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Viewer from "./Animation";
 import ButterflyEffect, { ButterflyEffect2 } from "./asset/butterflyEffect";
-import Svg2 from "./asset/svg2";
+import Svg2 from "./asset/Svg2";
 import Svg3 from "./asset/Svg3";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Svg4 from "./asset/Svg4";
@@ -67,9 +67,9 @@ export default function StartBox() {
               <p className="md:text-[16px] text-[14px] font-normal tracking-wide line-clamp-6">
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
+                injected humour, or randomised words which dont look even
                 slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
+                Ipsum, you need to be sure there isnt anything embarrassing
                 hidden in the middle of text. All the Lorem Ipsum generators on
                 the Internet tend to repeat predefined chunks as necessary,
                 making this the first true generator on the Internet. It uses a
