@@ -5,6 +5,7 @@ import Viewer from "./Animation";
 import ButterflyEffect, { ButterflyEffect2 } from "./asset/butterflyEffect";
 import Svg2 from "./asset/svg2";
 import Svg3 from "./asset/Svg3";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Svg4 from "./asset/Svg4";
 
 import Link from "next/link";
