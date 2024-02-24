@@ -8,13 +8,15 @@ import Svg19 from "../../components/asset/Svg19";
 import Svg20 from "../../components/asset/Svg20";
 import Svg21 from "../../components/asset/Svg21";
 import Svg22 from "../../components/asset/Svg22";
-import { ParallaxLayer } from "@react-spring/parallax";
-import React from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import React, { useRef } from "react";
 
 export default function Product() {
+  const parallaxRef = useRef();
   return (
     <div className="">
-      <ParallaxLayer offset={0} speed={2}>
+       <Parallax ref={parallaxRef} pages={2} style={{ top: "0", left: "0" }}>
+       <ParallaxLayer offset={0} speed={1}>
         <div className="container mx-auto">
           <div className="flex flex-col w-full items-center py-20 md:py-32">
             <p className="text-[20px] font-medium text-[#ffffff]">Products</p>
@@ -80,6 +82,8 @@ export default function Product() {
           </div>
         </div>
       </ParallaxLayer>
+       </Parallax>
+     
     </div>
   );
 }

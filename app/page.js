@@ -38,7 +38,7 @@ const Home = () => {
       <ParallaxLayer offset={4} speed={2.5} style={{ height: "100vh" }}>
         <Partners></Partners>
       </ParallaxLayer>
-      <ParallaxLayer offset={5} speed={3}>
+      <ParallaxLayer offset={5} speed={1}>
         <Footer />
       </ParallaxLayer>
     </Parallax>

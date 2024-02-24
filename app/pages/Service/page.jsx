@@ -9,13 +9,16 @@ import Svg5 from "../../components/asset/Svg13";
 import Svg6 from "../../components/asset/Svg14";
 import Svg7 from "../../components/asset/Svg15";
 
-import { ParallaxLayer } from "@react-spring/parallax";
-import React from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
+import React, { useRef } from "react";
 
 export default function Service() {
+  const parallaxRef = useRef();
   return (
     <div className="">
-      <ParallaxLayer offset={0} speed={2} >
+      <Parallax ref={parallaxRef} pages={2} style={{ top: "0", left: "0" }}>
+      <ParallaxLayer offset={0} speed={1} >
         <div className="container mx-auto">
           <div className="flex flex-col w-full items-center py-20 md:py-32">
             <p className="text-[20px] font-medium text-[#ffffff]">
@@ -62,6 +65,8 @@ export default function Service() {
           </div>
         </div>
       </ParallaxLayer>
+      </Parallax>
+     
     </div>
   );
 }
