@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import Viewer from "./components/Animation";
 const Home = () => {
   const parallaxRef = useRef();
-  // const isMobile = window.innerWidth < 768;
+ 
 
   return (
     <Parallax ref={parallaxRef} pages={6} style={{ top: "0", left: "0" }}>

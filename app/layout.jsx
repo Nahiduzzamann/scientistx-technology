@@ -5,7 +5,6 @@ import Header from "./components/Header";
 
 
 import React from "react";
-import ParticlesBg from "particles-bg";
 import Graphic from "../public/Graphic.svg";
 
 
@@ -33,8 +32,8 @@ export default function RootLayout({ children, page }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ParticlesBg type="lines" num={10} bg={style.canvas} />
+      <body style={{backgroundColor:"#333333"}} className={inter.className}>
+        {/* <ParticlesBg type="lines" num={10} bg={style.canvas} /> */}
         <div className="">
           <Header  />
           {children}
