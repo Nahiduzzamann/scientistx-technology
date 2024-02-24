@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import CountUp from "react-countup";
 import useIsInViewport from "../hooks/useIsInViewport";
 import Link from "next/link";
@@ -64,8 +64,10 @@ const OurProject = () => {
 
 export default OurProject;
 const SimpleCart = ({ number, title, description, count }) => {
-  const ref = useRef();
-  const inPort = useIsInViewport(ref);
+  //const ref = useRef();
+  const [ref, isInViewport] = useIsInViewport({
+    threshold: 0.5, // Adjust threshold as needed
+  });
   return (
     <div
       className="shadow-md bg-[#1B75BC] rounded-md flex justify-center flex-col items-center p-6"
@@ -80,7 +82,7 @@ const SimpleCart = ({ number, title, description, count }) => {
       <CountUp start={0} end={count}>
         {({ countUpRef, start }) => (
           <div className="font-normal text-[16px] mt-4">
-            <span onClick={inPort ? start() : null} ref={countUpRef} />
+            <span onClick={isInViewport ? start() : null} ref={countUpRef} />
           </div>
         )}
       </CountUp>

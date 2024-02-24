@@ -1,25 +1,23 @@
-'use client'
-import { useEffect, useMemo, useState } from "react";
+// useIsInViewport.js
+import { useState, useEffect, useRef } from 'react';
 
-export default function useIsInViewport(ref) {
-    const [isIntersecting, setIsIntersecting] = useState(false);
-  
-    const observer = useMemo(
-      () =>
-        new IntersectionObserver(([entry]) =>
-          setIsIntersecting(entry.isIntersecting),
-        ),
-      [],
-    );
-  
-    useEffect(() => {
-      observer.observe(ref.current);
-  
-      return () => {
-        observer.disconnect();
-      };
-    }, [ref, observer]);
-  
-    return isIntersecting;
-  }
-  
+export default function useIsInViewport(options) {
+  const [isInViewport, setIsInViewport] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsInViewport(entry.isIntersecting);
+    }, options);
+
+    observer.observe(ref.current);
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [options]);
+
+  return [ref, isInViewport];
+}

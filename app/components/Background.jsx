@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 export default function Background() {
@@ -11,8 +11,7 @@ export default function Background() {
       setInit(true);
     });
   }, []);
-  const options = useMemo(
-    () => ({
+  const options = {
       background: {
         color: {
           value: "#333333",
@@ -78,8 +77,6 @@ export default function Background() {
         },
       },
       detectRetina: true,
-    }),
-    [],
-  );
+    }
   return <div className=" absolute -z-10">{init && <Particles id="tsparticles" options={options} />}</div>;
 }
