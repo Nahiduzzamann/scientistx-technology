@@ -1,48 +1,47 @@
 "use client";
-import { ParallaxLayer } from "@react-spring/parallax";
 import StartBox from "./components/StartBox";
 import OurProject from "./components/OurProject";
 import { useRef } from "react";
 import Technologies from "./components/Technologies";
 import Partners from "./components/Partners";
 import PreceduralAndTechnologies from "./components/ProceduralAndTechnologies";
-
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import Footer from "./components/Footer";
+import Viewer from "./components/Animation";
 const Home = () => {
   const parallaxRef = useRef();
+  const isMobile = window.innerWidth < 768;
 
   return (
-    <div ref={parallaxRef}>
+    <Parallax ref={parallaxRef} pages={4} style={{ top: "0", left: "0" }}>
       <ParallaxLayer
-        offset={0}
+        factor={.01}
+        offset={0.1}
         speed={2}
-        style={{ height: "100vh"}}
+        style={{ height: "100vh" }}
       >
-        <div >
+        <div>
           <StartBox />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0.99} speed={2.5} style={{ height: "100vh"}}>
+     
+      <ParallaxLayer offset={1} speed={2.5} style={{ height: "100vh" }}>
         <OurProject />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1.2} speed={2} style={{ height: "100vh"}}>
+      <ParallaxLayer offset={2} speed={3} style={{ height: "100vh" }}>
         <Technologies></Technologies>
       </ParallaxLayer>
-      <ParallaxLayer
-        offset={2}
-        speed={1.5}
-        style={{ height: "100vh"}}
-      >
+      <ParallaxLayer offset={3} speed={1.5} style={{ height: "100vh" }}>
         <PreceduralAndTechnologies></PreceduralAndTechnologies>
       </ParallaxLayer>
-      <ParallaxLayer
-        offset={3}
-        speed={2.5}
-        style={{ height: "100vh"}}
-      >
+      <ParallaxLayer offset={3} speed={2.5} style={{ height: "100vh" }}>
         <Partners></Partners>
       </ParallaxLayer>
-    </div>
+      <ParallaxLayer offset={4} speed={1}>
+        <Footer />
+      </ParallaxLayer>
+    </Parallax>
   );
 };
 export default Home;

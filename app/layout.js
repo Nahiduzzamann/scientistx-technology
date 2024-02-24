@@ -2,7 +2,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 import Footer from "./components/Footer";
 import React, { useEffect, useRef, useState } from "react";
 import ParticlesBg from "particles-bg";
@@ -30,60 +30,16 @@ const style = {
   },
 };
 export default function RootLayout({ children, page }) {
-  const parallaxRef = useRef();
   const [open, setOpen] = useState(false);
-  const matches = useMediaQuery("(min-width: 1024px)");
-  const [prevScrollpos, setPrevScrollpos] = useState(0);
   const [header, setHeader] = React.useState(true);
-  useEffect(() => {
-    if (matches) {
-      setOpen(false);
-    }
-  }, [matches]);
-  const scrollListener = () => {
-    const handleWheelEvent = () => {
-      const { container, current } = parallaxRef.current;
-      const scrollpercent =
-        current / (container.current.scrollHeight - window.innerHeight);
-      //updateScroll(scrollpercent)
-    };
-    window.addEventListener("wheel", handleWheelEvent);
-    return () => {
-      window.removeEventListener("wheel", handleWheelEvent);
-    };
-  };
-  useEffect(scrollListener, []);
-  const updateScroll = (val) => {
-    if (prevScrollpos > val) {
-      setHeader(true);
-    } else {
-      setHeader(false);
-    }
-    setPrevScrollpos(val);
-  };
+
   return (
     <html lang="en">
       <body className={inter.className}>
         <ParticlesBg type="lines" num={10} bg={style.canvas} />
         <div className="">
           <Header header={header} open={open} setOpen={setOpen} />
-          <Parallax
-            ref={parallaxRef}
-            pages={page ? page : 5}
-            style={{ top: "0", left: "0" }}
-            onScroll={(e) => {
-              console.log(e.currentTarget);
-            }}
-          >
-            <div className="md:mt-20 mt-16">{children}</div>
-            <ParallaxLayer
-              offset={page ? page - 1 : 4}
-              speed={page ? (page - 1) / 2 : 2}
-            >
-              <Footer />
-            </ParallaxLayer>
-          </Parallax>
-
+          {children}
         </div>
       </body>
     </html>
