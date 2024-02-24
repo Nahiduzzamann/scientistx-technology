@@ -105,7 +105,7 @@ const Header = ({ open, setOpen, header }) => {
                 />
               </svg>
             </div>
-            <div
+            <Link href='/'><div
               style={{
                 fontSize: "34px",
                 alignItems: "flex-start",
@@ -118,7 +118,7 @@ const Header = ({ open, setOpen, header }) => {
                 effectDelay={0.9}
                 effectChange={0.7}
               />
-            </div>
+            </div></Link>
           </div>
           <div className="">
             <div className="flex text-[14px]">
@@ -240,7 +240,7 @@ const Header = ({ open, setOpen, header }) => {
         }}
         className="text-white bg-[#275278] w-full md:hidden py-1 px-2 flex justify-between items-center"
       >
-        <div
+        <Link href='/'><div
           style={{
             fontSize: "34px",
             alignItems: "flex-start",
@@ -254,7 +254,7 @@ const Header = ({ open, setOpen, header }) => {
             effectDelay={0.9}
             effectChange={0.7}
           />
-        </div>
+        </div></Link>
         <div className="flex gap-2">
               <svg
                 width="17"
