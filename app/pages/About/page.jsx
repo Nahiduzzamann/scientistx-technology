@@ -14,7 +14,7 @@ function page() {
 
       <div className="flex flex-col w-full items-center justify-start md:my-20 my-10">
         <p className="text-[16px] font-normal text-[#ffffff]">The students from both Edexcel and Cambridge are being honoured for their outstanding results in O- and A-Level at the Mirpur indoor stadium. The Daily Star is awarding a total of 2,563 students, including 1,765 O-level and 656 A-level students, for their achievements.
-          The awardees' parents, families, teachers, friends, and special guests are also attending the event. The programme started with the rendition of the national anthem.
+          The awardees parents, families, teachers, friends, and special guests are also attending the event. The programme started with the rendition of the national anthem.
           Editor and Publisher of The Daily Star, Mahfuz Anam, welcomed all shortly after the programme began around 9:20am. By then, the indoor stadium was full to the brim.
           HSBC Bank is the title sponsor of the event titled 23rd The Daily Star HSBC O & A level Awards. Meanwhile, Pearson Edexcel and Cambridge are the academic partners.</p>
       </div>
