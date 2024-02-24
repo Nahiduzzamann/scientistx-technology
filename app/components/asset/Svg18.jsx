@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from '../../../public/Online Hotel Booking.png';
+import img from '../../../public/Group (1).png';
 
 function Svg18() {
   return (
