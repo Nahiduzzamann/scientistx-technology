@@ -6,7 +6,7 @@ import Background from "./components/Background";
 import React from "react";
 import Graphic from "../public/Graphic.svg";
 import Footer from "./components/Footer";
-import { Providers } from "./Providers";
+import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
