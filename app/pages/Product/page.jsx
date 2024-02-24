@@ -15,8 +15,7 @@ export default function Product() {
   const parallaxRef = useRef();
   return (
     <div className="">
-       <Parallax ref={parallaxRef} pages={2} style={{ top: "0", left: "0" }}>
-       <ParallaxLayer offset={0} speed={1}>
+       
         <div className="container mx-auto">
           <div className="flex flex-col w-full items-center py-20 md:py-32">
             <p className="text-[20px] font-medium text-[#ffffff]">Products</p>
@@ -81,8 +80,7 @@ export default function Product() {
             ></CardService>
           </div>
         </div>
-      </ParallaxLayer>
-       </Parallax>
+    
      
     </div>
   );

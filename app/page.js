@@ -5,26 +5,35 @@ import { useRef } from "react";
 import Technologies from "./components/Technologies";
 import Partners from "./components/Partners";
 import PreceduralAndTechnologies from "./components/ProceduralAndTechnologies";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Footer from "./components/Footer";
 import Viewer from "./components/Animation";
+import { Parallax } from "react-scroll-parallax";
 const Home = () => {
   const parallaxRef = useRef();
- 
 
+  return (
+    <div>
+      
+      <StartBox />
+      <Parallax speed={1}>
+      <OurProject />
+      </Parallax>
+      
+      <Technologies></Technologies>
+      <PreceduralAndTechnologies></PreceduralAndTechnologies>
+      <Partners></Partners>
+    </div>
+  );
   return (
     <Parallax ref={parallaxRef} pages={6} style={{ top: "0", left: "0" }}>
       <ParallaxLayer
-        factor={.01}
+        factor={0.01}
         offset={0.1}
         speed={2}
-        style={{ height: "100vh" }}
-      >
-        <div>
-          <StartBox />
-        </div>
+        style={{ height: "100vh" }}>
+        <div></div>
       </ParallaxLayer>
-     
+
       <ParallaxLayer offset={1} speed={2.5} style={{ height: "100vh" }}>
         <OurProject />
       </ParallaxLayer>

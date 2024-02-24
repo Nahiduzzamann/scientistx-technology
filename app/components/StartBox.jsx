@@ -21,11 +21,11 @@ export default function StartBox() {
   };
   return (
     <div className="container mx-auto">
-      <div className="lg:flex w-full justify-between h-full  px-2 ">
+      <div className=" lg:grid lg:grid-cols-2 w-full justify-between h-full  px-2 ">
       <div className=" w-full  lg:hidden lg:h-[100vw] h-[30vh] mt-[50px]">
         <Viewer />
       </div>
-      <div className=" max-w-[800px] h-full lg:flex items-center text-white">
+      <div className="  h-full lg:flex items-center text-white">
         <div className="">
           <div className="lg:mb-20  hidden md:block mt-20">
             <ButterflyEffect></ButterflyEffect>
@@ -96,7 +96,7 @@ export default function StartBox() {
           </div>
         </div>
       </div>
-      <div className="w-[630px] hidden lg:flex">
+      <div className="  z-0 hidden lg:flex">
         <Viewer />
       </div>
     </div>

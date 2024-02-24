@@ -1,13 +1,12 @@
-
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 
-
+import Background from "./components/Background";
 import React from "react";
 import Graphic from "../public/Graphic.svg";
-
-
+import Footer from "./components/Footer";
+import { Providers } from "./Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -29,15 +28,17 @@ const style = {
   },
 };
 export default function RootLayout({ children, page }) {
-
   return (
     <html lang="en">
-      <body style={{backgroundColor:"#333333"}} className={inter.className}>
-        {/* <ParticlesBg type="lines" num={10} bg={style.canvas} /> */}
-        <div className="">
-          <Header  />
-          {children}
-        </div>
+      <body style={{ backgroundColor: "#333333" }} className={inter.className}>
+        <Background />
+        <Providers>
+          <div>
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );
