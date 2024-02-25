@@ -146,7 +146,7 @@ const Header = ({ open, setOpen, header }) => {
                   </defs>
                 </svg>
 
-                <p className="ml-2 text-[14px] font-normal">+8801761143991</p>
+                <p className="ml-2 text-[14px] font-normal">+1646-704-8275</p>
               </div>
               <div className="flex items-center ml-2">
                 <svg
