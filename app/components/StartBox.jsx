@@ -20,7 +20,7 @@ export default function StartBox() {
     // console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="container mx-auto pt-10">
+    <div className="container mx-auto pt-10 px-1">
       <div className=" lg:grid lg:grid-cols-2  w-full justify-between h-full  px-2 ">
       <div className=" w-full  lg:hidden  h-[100vw] ">
         <Viewer />
@@ -96,7 +96,7 @@ export default function StartBox() {
           </div>
         </div>
       </div>
-      <div className="  z-0 hidden lg:flex">
+      <div className="   z-0 hidden lg:flex">
         <Viewer />
       </div>
     </div>

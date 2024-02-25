@@ -12,7 +12,7 @@ const Home = () => {
   const parallaxRef = useRef();
 
   return (
-    <div>
+    <div >
       <StartBox />
       <OurProject />
 
