@@ -12,13 +12,20 @@ const Home = () => {
   const parallaxRef = useRef();
 
   return (
-    <div >
+    <div>
       <StartBox />
-      <OurProject />
-
-      <Technologies></Technologies>
-      <PreceduralAndTechnologies></PreceduralAndTechnologies>
-      <Partners></Partners>
+      <div className="lg:my-32 md:my-24 my-16">
+        <OurProject />
+      </div>
+      <div className="lg:my-32 md:my-24 my-16">
+        <Technologies></Technologies>
+      </div>
+      <div className="lg:my-32 md:my-24 my-16">
+        <PreceduralAndTechnologies></PreceduralAndTechnologies>
+      </div>
+      <div className="lg:my-32 md:my-24 my-16">
+        <Partners></Partners>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Svg5() {
   return (
     <div>
-      <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className='h-[300px] w-[300px] lg:h-[500px] lg:w-[500px]' viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M287.857 111.623V90.0195C271.288 94.1365 256.076 101.402 241.16 111.624L287.857 111.623Z" fill="#1B75BC"/>
 <path d="M408.727 119.412H294.371V261.354H408.727V119.412Z" fill="#1B75BC"/>
 <path d="M287.856 119.412H230.45C217.622 129.009 204.461 138.728 189.082 144.274C183.938 146.129 178.737 147.76 173.5 149.277V261.354H287.856V119.412Z" fill="#1B75BC"/>

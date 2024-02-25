@@ -12,7 +12,11 @@ import Icon from '../../public/Group.png';
 const OurProject = () => {
   return (
     <div className="text-white container mx-auto px-2 py-2">
-      <div className="w-full grid md:grid-cols-3 grid-cols-1 justify-center gap-2 mt-10">
+      <div className="flex flex-col w-full items-center md:my-20 my-10">
+        <p className="text-[20px] font-medium text-[#ffffff]">Our Projects</p>
+        <div className="h-1 my-2 w-full max-w-[300px] bg-[#1B75BC]"></div>
+      </div>
+      <div className="w-full grid md:grid-cols-3 grid-cols-1 justify-center gap-2 mt-10 ">
         <SimpleCart
           description={
             "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim"
