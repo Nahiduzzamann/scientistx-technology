@@ -5443,12 +5443,11 @@ export default function Viewer() {
   const [loaded, setLoaded] = useState(true);
 
   return (
-    <Canvas camera={{ position: [5, 4, 2], fov: 80 }}>
+    <Canvas camera={{ position: [5, 5, 2], fov: 60 }}>
       <ambientLight intensity={0.5} />
-      {loaded && <Model position={[1, 0, 0]} />}
-      {loaded && <Environment preset="sunset" />}
-      {loaded && (
-        <ContactShadows
+      <Model position={[1, 0, 0]} />
+      <Environment preset="sunset"/>
+      <ContactShadows
           frames={1}
           scale={5}
           position={[0, -1, 0]}
@@ -5457,7 +5456,6 @@ export default function Viewer() {
           opacity={0.5}
           color="#204080"
         />
-      )}
       <OrbitControls />
     </Canvas>
   );

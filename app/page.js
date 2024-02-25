@@ -13,17 +13,13 @@ const Home = () => {
 
   return (
     <div>
-      
       <StartBox />
-      <Parallax speed={1}>
       <OurProject />
-      </Parallax>
-      
+
       <Technologies></Technologies>
       <PreceduralAndTechnologies></PreceduralAndTechnologies>
       <Partners></Partners>
     </div>
   );
- 
 };
 export default Home;

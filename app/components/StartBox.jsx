@@ -20,9 +20,9 @@ export default function StartBox() {
     // console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="container mx-auto">
-      <div className=" lg:grid lg:grid-cols-2 w-full justify-between h-full  px-2 ">
-      <div className=" w-full  lg:hidden lg:h-[100vw] h-[30vh] mt-[50px]">
+    <div className="container mx-auto pt-10">
+      <div className=" lg:grid lg:grid-cols-2  w-full justify-between h-full  px-2 ">
+      <div className=" w-full  lg:hidden  h-[100vw] ">
         <Viewer />
       </div>
       <div className="  h-full lg:flex items-center text-white">

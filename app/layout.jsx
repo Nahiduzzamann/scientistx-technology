@@ -20,17 +20,18 @@ const style = {
     position: "absolute",
     top: "0px",
     left: "0px",
-    backgroundImage: "url(" + Graphic + ")",
+    backgroundImage: "url('./Graphic.svg')",
     backgroundSize: "cover",
-    zIndex: -1,
+    zIndex: -11,
     color: "#ffff",
-    backgroundColor: "#f7f7f74f",
+    backgroundColor: "#333333",
   },
 };
 export default function RootLayout({ children, page }) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "#333333" }} className={inter.className}>
+      <body style={{backgroundColor:"#000"}}  className={inter.className}>
+        
         <Background />
         <Providers>
           <div>
