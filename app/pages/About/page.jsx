@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -17,17 +17,20 @@ function page() {
       </div>
 
       <div className="">
-        The students from both Edexcel and Cambridge are being honoured for
-        their outstanding results in O- and A-Level at the Mirpur indoor
-        stadium. The Daily Star is awarding a total of 2,563 students, including
-        1,765 O-level and 656 A-level students, for their achievements. The
-        awardees parents, families, teachers, friends, and special guests are
-        also attending the event. The programme started with the rendition of
-        the national anthem. Editor and Publisher of The Daily Star, Mahfuz
-        Anam, welcomed all shortly after the programme began around 9:20am. By
-        then, the indoor stadium was full to the brim. HSBC Bank is the title
-        sponsor of the event titled 23rd The Daily Star HSBC O & A level Awards.
-        Meanwhile, Pearson Edexcel and Cambridge are the academic partners.
+        ScientistX is a multinational consortium founded by the ScientistX Group
+        in 2021 with the aim of leveraging technology to empower humanity. This
+        visionary initiative seeks to harness the power of cutting-edge
+        technology to address pressing global challenges and enhance the
+        well-being of individuals and communities worldwide. Through
+        collaborative research, innovation, and the application of scientific
+        advancements, ScientistX endeavors to foster positive societal change
+        and promote sustainable development. By bringing together leading
+        experts, organizations, and stakeholders across various disciplines,
+        ScientistX is poised to drive transformative progress in fields ranging
+        from healthcare and education to environmental conservation and beyond.
+        With a steadfast commitment to advancing the greater good, ScientistX is
+        dedicated to shaping a brighter future for all through the intersection
+        of science, technology, and humanity.
       </div>
 
       <div className="flex flex-col w-full items-center justify-start  my-10">
@@ -82,7 +85,10 @@ function page() {
           email="monjurul@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
         />
-        <AboutCart  onClick={()=>window.open("https://nahiduzzaman-portfolio.web.app/","_blank")}
+        <AboutCart
+          onClick={() =>
+            window.open("https://nahiduzzaman-portfolio.web.app/", "_blank")
+          }
           img={nahid}
           name="Md. Nahiduzzaman"
           post="Chief Technology Officer(CTO)"
@@ -111,19 +117,25 @@ function page() {
           text=".."
         />
       </div>
-
     </div>
   );
 }
 
 export default page;
 
-const AboutCart = ({ img, name, post, email, text,onClick }) => {
+const AboutCart = ({ img, name, post, email, text, onClick }) => {
   return (
-    <div onClick={onClick} className=" bg-[#1B75BC] cursor-pointer text-[#fff] px-1 py-2 hover:bg-slate-500">
+    <div
+      onClick={onClick}
+      className=" bg-[#1B75BC] cursor-pointer text-[#fff] px-1 py-2 hover:bg-slate-500"
+    >
       <div className=" flex items-center">
         <div class="shrink-0">
-          <Image className="h-16 rounded-full w-16 ml-[5px]" src={img} alt="ChitChat Logo" />
+          <Image
+            className="h-16 rounded-full w-16 ml-[5px]"
+            src={img}
+            alt="ChitChat Logo"
+          />
         </div>
         <div className="ml-[10px]">
           <p className="text-[16px]">{name}</p>

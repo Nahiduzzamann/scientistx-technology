@@ -18,12 +18,14 @@ function ProceduralAndTechnologies() {
               <Svg23></Svg23>
 
               <p className="text-[16px] font-normal xl:max-w-[450px] lg:max-w-[350px] md:max-w-[300px] max-w-[250px]">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which dont look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isnt anything embarrassing
-                hidden in the middle of text. All the{" "}
+                Unlocking the potential at the nexus of innovation and humanity,
+                we're on a mission to revolutionize how technology can drive
+                positive change. Our focus is twofold: to develop cutting-edge
+                solutions that address pressing humanitarian needs while
+                creating sustainable revenue streams. Through a blend of
+                creativity and strategic thinking, we pioneer ideas that empower
+                communities and enrich lives. Join us in shaping a future where
+                innovation not only serves humanity but also fuels prosperity.
               </p>
             </div>
             <Svg25></Svg25>
@@ -52,7 +54,7 @@ function ProceduralAndTechnologies() {
               </p>
             </div>
             <div className="block lg:hidden">
-            <Svg25></Svg25>
+              <Svg25></Svg25>
             </div>
           </div>
         </div>
