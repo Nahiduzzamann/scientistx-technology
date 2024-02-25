@@ -145,39 +145,39 @@ const Footer = () => {
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
             EXTERNAL LINKS
           </p>
-          <Link href="/">
+          <Link href="/pages/Dummy">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Agreement Signing
             </p>
           </Link>
-          <Link href="/">
+          <Link href="/pages/News">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Recent News
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/News">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Scientistx for new generation
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/About">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Connect with tech
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               New Idea Sharing
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Programming Contest
@@ -188,43 +188,43 @@ const Footer = () => {
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
           SERVICES
           </p>
-          <Link href="/">
+          <Link href="/pages/Service">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Mobile Apps Development
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Website Development
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Digital Marketing
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Smart Device & IOT
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Assistant and AI search engine
             </p>
           </Link>
-          <Link href="/">
+          <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Business Analysis
+            And many more
             </p>
           </Link>
         </div>
@@ -232,34 +232,34 @@ const Footer = () => {
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
           COMPANY
           </p>
-          <Link href="/">
+          <Link href="/pages/About">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             About Us
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             FAQ
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Privacy Policy
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Customer Policy
             </p>
           </Link>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Order Policy
@@ -270,38 +270,38 @@ const Footer = () => {
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
           SOCIAL
           </p>
-          <Link href="/">
+          <a href="https://www.facebook.com/scientistx" target="blank">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Facebook
             </p>
-          </Link>
+          </a>
 
-          <Link href="/">
+          <a href="https://www.linkedin.com/company/scientistx-technology/"  target="blank">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             LinkedIn
             </p>
-          </Link>
+          </a>
 
-          <Link href="/">
+          <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             Twitter
             </p>
           </Link>
 
-          <Link href="/">
+          {/* <a href="/">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
             YouTube
             </p>
-          </Link>
+          </a> */}
 
           
         </div>
       </div>
       <p className="text-[16px] text-[#1B75BC] font-normal  my-[14px]">
-        @ 2024 All rights reserved by ScientistX Compnay PLC
+        @ 2024 All rights reserved by ScientistX Technology LTD.
       </p>
     </div>
   );
