@@ -12,7 +12,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function StartBox() {
-  const router=useRouter()
+  const router = useRouter();
   const handleType = (count) => {
     // access word count number
     // console.log(count);
@@ -85,17 +85,22 @@ export default function StartBox() {
                     commitment to advancing the greater good, ScientistX is
                     dedicated to shaping a brighter future for all through the
                     intersection of science, technology, and humanity.
-                    <span onClick={()=>{router.push("pages/About")}} className="absolute bottom-0 text-green-500 cursor-pointer -right-10 z-10">
-                      Read More
-                    </span>
                   </p>
+                  <span
+                    onClick={() => {
+                      router.push("pages/About");
+                    }}
+                    className=" bottom-0 text-green-500 cursor-pointer -right-10 z-10"
+                  >
+                    Read More
+                  </span>
                 </div>
                 <br />
                 <div className="">
                   <div className="flex  items-center gap-2">
                     <Link
                       className="px-6 py-2 text-[16px] font-normal cursor-pointer rounded-sm  bg-[#1B75BC]"
-                      href="/pages/Register"
+                      href="/pages/Login"
                     >
                       Login Here
                     </Link>

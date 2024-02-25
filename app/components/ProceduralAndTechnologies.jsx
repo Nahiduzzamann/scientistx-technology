@@ -19,7 +19,7 @@ function ProceduralAndTechnologies() {
 
               <p className="text-[16px] font-normal xl:max-w-[450px] lg:max-w-[350px] md:max-w-[300px] max-w-[250px]">
                 Unlocking the potential at the nexus of innovation and humanity,
-                we're on a mission to revolutionize how technology can drive
+                we are on a mission to revolutionize how technology can drive
                 positive change. Our focus is twofold: to develop cutting-edge
                 solutions that address pressing humanitarian needs while
                 creating sustainable revenue streams. Through a blend of

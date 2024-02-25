@@ -6,11 +6,13 @@ import Background from "./components/Background";
 import React from "react";
 import Footer from "./components/Footer";
 import { Providers } from "./providers";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Home | Scientistx Technology",
-  description: "Success your ideas with us",
+  title: "Scientistx Technology | Success your ideas with us",
+  description: "ScientistX is a multinational consortium founded by the ScientistX Group in 2021 with the aim of leveraging technology to empower humanity. This visionary initiative seeks to harness the power of cutting-edge technology to address pressing global challenges and enhance the well-being of individuals and communities worldwide. Through collaborative research, innovation, and the application of scientific advancements, ScientistX endeavors to foster positive societal change and promote sustainable development. By bringing together leading experts, organizations, and stakeholders across various disciplines, ScientistX is poised to drive transformative progress in fields ranging from healthcare and education to environmental conservation and beyond. With a steadfast commitment to advancing the greater good, ScientistX is dedicated to shaping a brighter future for all through the intersection of science, technology, and humanity." ,
+  keywords:"scientistx, scientistx technology, tech, technology, software"
 };
 const style = {
   canvas: {
@@ -29,6 +31,7 @@ const style = {
 export default function RootLayout({ children, page }) {
   return (
     <html lang="en">
+    
       <body style={{backgroundColor:"#000"}}  className={inter.className}>
         
         <Background />
