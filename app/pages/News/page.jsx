@@ -31,6 +31,8 @@ export default function News() {
           title="The Daily Star honouring high achievers in O, A level exams"
           description="The Daily Star is honouring the high achievers in O- and A-Level
           examinations in a programme today, with a tagline Saluting the nation
+          builders of tomorrows The Daily Star is honouring the high achievers in O- and A-Level
+          examinations in a programme today, with a tagline Saluting the nation
           builders of tomorrows"
           ></CardNews>
         </div>
