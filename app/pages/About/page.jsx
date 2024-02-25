@@ -99,7 +99,7 @@ function page() {
           name="MD SAZZAD HOSSAIN"
           post="Development Head"
           email="sazzad@scientistx.tech"
-          text="Life is like a drama it turned into end when we fall"
+          text="Life is a poetry about yourself in where you are a visitor only"
         />
         <AboutCart
           img={Img1}
@@ -118,7 +118,7 @@ export default page;
 
 const AboutCart = ({ img, name, post, email, text,onClick }) => {
   return (
-    <div onClick={onClick} className=" bg-[#1B75BC] text-[#fff] px-1 py-2 hover:bg-slate-500">
+    <div onClick={onClick} className=" bg-[#1B75BC] cursor-pointer text-[#fff] px-1 py-2 hover:bg-slate-500">
       <div className=" flex items-center">
         <div class="shrink-0">
           <Image className="h-16 rounded-full w-16 ml-[5px]" src={img} alt="ChitChat Logo" />

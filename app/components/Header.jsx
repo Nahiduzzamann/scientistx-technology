@@ -165,7 +165,7 @@ const Header = ({ open, setOpen, header }) => {
                   />
                 </svg>
 
-                <p className="ml-2 text-[14px] font-normal">info@scientistx.com</p>
+                <p className="ml-2 text-[14px] font-normal">info@scientistx.tech</p>
               </div>
               <div className="flex items-center ml-2">
                 <svg
@@ -248,7 +248,7 @@ const Header = ({ open, setOpen, header }) => {
           }}
         >
           <Wave
-            text="Scientistx"
+            text="ScientistX"
             effect="stretch"
             effectDuration={0.9}
             effectDelay={0.9}
