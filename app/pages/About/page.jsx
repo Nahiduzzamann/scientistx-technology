@@ -98,7 +98,7 @@ function page() {
         <AboutCart onClick={()=>window.open("https://sazzad-19.web.app","_blank")}
           img={require("../../../public/myimage.jpg")}
           name="MD SAZZAD HOSSAIN"
-          post="Development Head"
+          post="Head Of Training and Development"
           email="sazzad@scientistx.tech"
           text="Life is a poetry about yourself in where you are a visitor only"
         />
