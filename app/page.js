@@ -5,9 +5,8 @@ import { useRef } from "react";
 import Technologies from "./components/Technologies";
 import Partners from "./components/Partners";
 import PreceduralAndTechnologies from "./components/ProceduralAndTechnologies";
-import Footer from "./components/Footer";
-import Viewer from "./components/Animation";
-import { Parallax } from "react-scroll-parallax";
+
+
 const Home = () => {
   const parallaxRef = useRef();
 

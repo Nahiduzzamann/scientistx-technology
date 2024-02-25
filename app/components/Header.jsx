@@ -9,7 +9,7 @@ import MobileNav from "./MobileNav";
 const Header = ({ open, setOpen, header }) => {
   const pathname = usePathname();
   return (
-    <div className=" bg-[#275278] z-30 fixed w-full">
+    <div className=" bg-[#275278] z-30 fixed w-full px-2">
       <MobileNav></MobileNav>
       <div className=" container mx-auto py-2 hidden md:block">
         <div className="flex w-full justify-between text-white items-center ">
