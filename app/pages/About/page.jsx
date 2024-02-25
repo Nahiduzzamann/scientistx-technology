@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Img1 from "../../../public/image 29.png";
 import nahid from "../../../public/nahid.jpg";
+import akash from "../../../public/Akash Profile.jpg";
 
 function page() {
   return (
@@ -88,13 +89,6 @@ function page() {
           email="nahid@scientistx.tech"
           text="..........."
         />
-         <AboutCart
-          img={Img1}
-          name="MD Saibur Rahman"
-          post="Chief Executing Officer"
-          email="saibur@scientistx.tech"
-          text="Life is full of beautiful journey if you can handle your emotions"
-        />
         <AboutCart onClick={()=>window.open("https://sazzad-19.web.app","_blank")}
           img={require("../../../public/myimage.jpg")}
           name="MD SAZZAD HOSSAIN"
@@ -108,6 +102,13 @@ function page() {
           post="Chief Executing Officer"
           email="saibur@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
+        />
+        <AboutCart onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
+          img={akash}
+          name="Tasnim Shahriar Akash"
+          post="..r"
+          email="akash@scientistx.tech"
+          text=".."
         />
       </div>
 
