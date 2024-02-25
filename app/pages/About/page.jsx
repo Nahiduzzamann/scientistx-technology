@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 import Img1 from "../../../public/image 29.png";
+import nahid from "../../../public/nahid.jpg";
 
 function page() {
   return (
@@ -45,7 +46,7 @@ function page() {
           <div className="flex items-center">
             <div className="h-[14px] w-[14px] bg-white rounded-full mr-2"></div>
             <p className="text-lg text-[#ffffff]e text-center  mr-[20px]">
-              Department Of Science & Information
+              Department Of Science & Technology
             </p>
           </div>
 
@@ -80,12 +81,12 @@ function page() {
           email="monjurul@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
         />
-        <AboutCart
-          img={Img1}
-          name="MD Saibur Rahman"
-          post="Chief Executing Officer"
-          email="saibur@scientistx.tech"
-          text="Life is full of beautiful journey if you can handle your emotions"
+        <AboutCart  onClick={()=>window.open("https://nahiduzzaman-portfolio.web.app/","_blank")}
+          img={nahid}
+          name="Md. Nahiduzzaman"
+          post="Chief Technology Officer(CTO)"
+          email="nahid@scientistx.tech"
+          text="..........."
         />
          <AboutCart
           img={Img1}
