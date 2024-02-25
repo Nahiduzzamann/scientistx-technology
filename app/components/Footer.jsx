@@ -91,7 +91,7 @@ const Footer = () => {
         <p className="text-[#ffffff] text-[16px] font-normal text-center lg:py-4 py-2">
           Contact Us
         </p>
-        <div className="flex md:flex-row flex-col justify-between gap-4">
+        <div className="flex md:flex-row flex-col justify-between md:gap-4">
           <div className="mb-2 w-full">
             <input
               type="text"
@@ -140,7 +140,7 @@ const Footer = () => {
           </div>
         </button>
       </form>
-      <div className="grid grid-cols-2 lg:grid-cols-4 w-full border-b lg:border-b-2 border-b-[#1B75BC] mt-2 lg:pb-4 pb-2">
+      <div className="grid grid-cols-2 lg:grid-cols-4 w-full border-b lg:border-b-2 border-b-[#1B75BC] mt-2 lg:pb-10 pb-2">
         <div>
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
             EXTERNAL LINKS

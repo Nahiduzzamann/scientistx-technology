@@ -35,6 +35,10 @@ import img28 from "../../public/linux-svgrepo-com.png";
 export default function Technologies() {
   return (
     <div className="container mx-auto px-2">
+      <div className="flex flex-col w-full items-center md:my-20 my-10">
+        <p className="text-[20px] font-medium text-[#ffffff]">Our Uses Technologies</p>
+        <div className="h-1 my-2 w-full max-w-[300px] bg-[#1B75BC]"></div>
+      </div>
       <div className="md:flex text-white justify-between ">
         <div>
           <div className="md:mt-10 mt-4">
