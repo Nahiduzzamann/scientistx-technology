@@ -4,12 +4,14 @@ import Link from "next/link";
 import Svg29 from "../components/asset/Svg29";
 import Form from "./Form";
 const Footer = () => {
- 
+  const [style,setStyle]=useState("")
   return (
     <div className="container mx-auto px-2 ">
       <div className="border-b lg:border-b-2 border-b-[#1B75BC] mt-16 lg:mt-24 lg:py-4 py-2">
         <div className="flex gap-2 md:gap-10">
-          <Svg29></Svg29>
+          <Link href="/">
+            <Svg29></Svg29>
+          </Link>
           <div className="">
             <p className="text-[#ffffff] text-[20px] font-normal">
               ScientistX Technology
@@ -66,20 +68,23 @@ const Footer = () => {
         </div>
       </div>
       {/* form  */}
-      <Form></Form>
+      <div className={`${style}`}>
+        <Form></Form>
+      </div>
+
       <div className="grid grid-cols-2 lg:grid-cols-4 w-full border-b lg:border-b-2 border-b-[#1B75BC] mt-2 lg:pb-10 pb-2">
         <div>
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
             EXTERNAL LINKS
           </p>
-          <Link href="/pages/Dummy">
+          <Link href="/pages/AgreementSigning">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Agreement Signing
             </p>
           </Link>
           <Link href="/pages/News">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Recent News
+              Recent News
             </p>
           </Link>
 
@@ -97,14 +102,14 @@ const Footer = () => {
             </p>
           </Link>
 
-          <Link href="/pages/Dummy">
+          <div onClick={()=>setStyle("md:px-10 mt-4 px-4 md:py-10 py-4 bg-gradient-to-r from-[#05050550] to-[#edb4086a] rounded-lg shadow-lg")} className="cursor-pointer">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               New Idea Sharing
             </p>
-          </Link>
+          </div>
 
-          <Link href="/pages/Dummy">
+          <Link href="/pages/ProgrammingContest">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Programming Contest
@@ -113,107 +118,110 @@ const Footer = () => {
         </div>
         <div className="text-end lg:text-start">
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
-          SERVICES
+            SERVICES
           </p>
           <Link href="/pages/Service">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Mobile Apps Development
+              Mobile Apps Development
             </p>
           </Link>
 
           <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Website Development
+              Website Development
             </p>
           </Link>
 
           <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Digital Marketing
+              Digital Marketing
             </p>
           </Link>
 
           <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Smart Device & IOT
+              Smart Device & IOT
             </p>
           </Link>
 
           <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Assistant and AI search engine
+              Assistant and AI search engine
             </p>
           </Link>
           <Link href="/pages/Service">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            And many more
+              And many more
             </p>
           </Link>
         </div>
-        <div  className="lg:text-end text-start">
+        <div className="lg:text-end text-start">
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
-          COMPANY
+            COMPANY
           </p>
           <Link href="/pages/About">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            About Us
+              About Us
+            </p>
+          </Link>
+
+          <Link href="/pages/FAQ">
+            {" "}
+            <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
+              FAQ
             </p>
           </Link>
 
           <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            FAQ
+              Privacy Policy
             </p>
           </Link>
 
           <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Privacy Policy
+              Customer Policy
             </p>
           </Link>
 
           <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Customer Policy
-            </p>
-          </Link>
-
-          <Link href="/pages/Dummy">
-            {" "}
-            <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Order Policy
+              Order Policy
             </p>
           </Link>
         </div>
         <div className="text-end">
           <p className="text-[20px] text-[#ffffff] font-normal mt-[10px]">
-          SOCIAL
+            SOCIAL
           </p>
           <a href="https://www.facebook.com/scientistx" target="blank">
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Facebook
+              Facebook
             </p>
           </a>
 
-          <a href="https://www.linkedin.com/company/scientistx-technology/"  target="blank">
+          <a
+            href="https://www.linkedin.com/company/scientistx-technology/"
+            target="blank"
+          >
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            LinkedIn
+              LinkedIn
             </p>
           </a>
 
           <Link href="/pages/Dummy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
-            Twitter
+              Twitter
             </p>
           </Link>
 
@@ -223,8 +231,6 @@ const Footer = () => {
             YouTube
             </p>
           </a> */}
-
-          
         </div>
       </div>
       <p className="text-[16px] text-[#1B75BC] font-normal  my-[14px]">

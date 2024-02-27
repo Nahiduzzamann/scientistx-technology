@@ -67,7 +67,7 @@ function MobileNav() {
           />
         </Link>
 
-        <Link href="/pages/Career">
+        {/* <Link href="/pages/Career">
           <div
             dangerouslySetInnerHTML={{
               __html: `
@@ -80,7 +80,7 @@ function MobileNav() {
     `,
             }}
           />
-        </Link>
+        </Link> */}
 
         <Link href="/pages/About">
           {" "}

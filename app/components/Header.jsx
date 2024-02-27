@@ -244,7 +244,7 @@ const Header = ({ open, setOpen, header }) => {
               >
                 News
               </Link>
-              <Link
+              {/* <Link
                 className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${
                   pathname === "/pages/Career"
                     ? "text-[#FFCA27] border-b border-b-[#FFCA27]"
@@ -253,7 +253,7 @@ const Header = ({ open, setOpen, header }) => {
                 href="/pages/Career"
               >
                 Career
-              </Link>
+              </Link> */}
               <Link
                 className={`hover:border-b hover:border-b-[#FFCA27] text-[16px] font-normal px-1 ${
                   pathname === "/pages/About"
