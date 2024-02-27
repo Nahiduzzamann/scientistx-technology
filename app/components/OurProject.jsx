@@ -114,7 +114,7 @@ const RivewCart = ({ img, name, post, email, text1, text2 }) => {
 
   return (
     <div
-      className=" shadow-md bg-[#1B75BC] rounded-md flex-col justify-left items-center flex-wrap p-4 text-[#ffffff]"
+      className=" shadow-md bg-[#1B75BC] rounded-md flex-col justify-left items-center flex-wrap py-4 px-8 text-[#ffffff]"
     >
       <div className="flex items-center">
         <div className="">
