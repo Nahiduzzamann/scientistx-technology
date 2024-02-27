@@ -5,7 +5,7 @@ function CustomerPolicy() {
         <h1 className="text-3xl font-bold mb-6">Customer Policy</h1>
 
         <p className="text-lg mb-6">
-          Welcome to Scientistx Technology! We value our customers and are committed to providing excellent service while ensuring a positive experience for all. This Customer Policy outlines our guidelines and expectations for interacting with our customers.
+          Welcome to ScientistX Technology! We value our customers and are committed to providing excellent service while ensuring a positive experience for all. This Customer Policy outlines our guidelines and expectations for interacting with our customers.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">Customer Service</h2>

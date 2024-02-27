@@ -4,7 +4,7 @@ function PrivacyPolicy() {
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
       <p className="text-lg mb-6">
-        At Scientistx Technology, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and protect your data when you use our website or services.
+        At ScientistX Technology, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and protect your data when you use our website or services.
       </p>
 
       <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>

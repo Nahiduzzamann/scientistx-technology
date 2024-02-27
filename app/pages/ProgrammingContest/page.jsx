@@ -4,7 +4,7 @@ function ProgrammingContest() {
       <div className=" p-8 border border-white rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold mb-6">Programming Contest</h1>
         <p className="text-lg mb-6">
-          Welcome to the Programming Contest hosted by [Your Company Name]! This
+          Welcome to the Programming Contest hosted by ScientistX technogoloy! This
           is an exciting opportunity for programmers of all levels to showcase
           their skills, compete with peers, and win exciting prizes.
         </p>

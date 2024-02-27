@@ -5,47 +5,32 @@ function OrderPolicy() {
         <h1 className="text-3xl font-bold mb-6">Order Policy</h1>
 
         <p className="text-lg mb-6">
-          Thank you for choosing Scientistx Technology! This Order Policy outlines
-          our guidelines and expectations regarding the ordering process,
-          payment, shipping, and returns.
+          Welcome to ScientistX technogoloy! This Order Policy outlines our guidelines and expectations regarding the software development process, including ordering, payment, delivery, and support.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">Placing an Order</h2>
         <p className="text-lg mb-6">
-          To place an order, simply browse our website, select the desired
-          products, and add them to your cart. Proceed to checkout and follow
-          the prompts to complete your purchase. You will receive a confirmation
-          email with details of your order.
+          To initiate a software development project with us, please reach out to our sales team or fill out the contact form on our website. Our representatives will discuss your project requirements, provide a detailed proposal, and finalize the terms and conditions.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">Payment</h2>
         <p className="text-lg mb-6">
-          We accept various payment methods including credit/debit cards,
-          PayPal, and bank transfers. Payments are processed securely, and your
-          financial information is encrypted to protect your privacy.
+          We offer flexible payment options tailored to your project needs. Depending on the project scope and timeline, payment terms may include upfront deposits, milestone payments, or recurring billing. Our billing team will provide you with a payment schedule and invoice details for your records.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4">Shipping</h2>
+        <h2 className="text-2xl font-semibold mb-4">Delivery</h2>
         <p className="text-lg mb-6">
-          We offer worldwide shipping to most countries. Shipping costs and
-          delivery times may vary depending on your location and the shipping
-          method selected at checkout. You can track your order status using the
-          provided tracking number.
+          The delivery timeline for your software project will be outlined in the project proposal and agreement. Our development team will work diligently to meet the agreed-upon deadlines and deliver a high-quality product that meets your expectations. We provide regular updates and progress reports throughout the development process to keep you informed.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4">Returns and Exchanges</h2>
+        <h2 className="text-2xl font-semibold mb-4">Support and Maintenance</h2>
         <p className="text-lg mb-6">
-          We want you to be completely satisfied with your purchase. If for any
-          reason you are not satisfied, you may return or exchange the item
-          within 30 days of receipt. Please ensure that the item is unused and
-          in its original packaging.
+          We offer ongoing support and maintenance services to ensure the smooth operation of your software solution. Our support team is available to assist you with any technical issues, updates, or enhancements. We prioritize customer satisfaction and strive to provide timely and effective support to address your needs.
         </p>
-
+        
         <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
         <p className="text-lg mb-6">
-          If you have any questions or concerns regarding our Order Policy or
-          the ordering process, please do not hesitate to contact us at
-          info@scientistx.tech. Our customer service team is here to assist you.
+          If you have any questions or require further clarification regarding our Order Policy or software development services, please do not hesitate to contact us at info@scientistx.tech. Our sales and support teams are here to assist you and ensure a seamless experience.
         </p>
       </div>
     </div>
