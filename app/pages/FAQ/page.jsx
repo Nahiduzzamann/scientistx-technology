@@ -94,9 +94,8 @@ function FAQ() {
           {faqVisibility[4] && (
             <p className="text-lg border border-white rounded p-2 ml-3 text-center">
               We specialize in a wide range of technologies including but not
-              limited to Java, Python, JavaScript, React, Angular, Node.js,
-              Swift, Kotlin, MongoDB, MySQL, AWS, Azure, Google Cloud Platform,
-              and more.
+              limited to JavaScript, TypeScript, React, Next.js, Node.js, MongoDB, MySQL, AWS
+              and <Link href='/' className="underline text-green-500">more</Link>....
             </p>
           )}
         </div>
@@ -184,8 +183,8 @@ function FAQ() {
           {faqVisibility[9] && (
             <p className="text-lg border border-white rounded p-2 ml-3 text-center">
               You can reach our support team by submitting a support ticket
-              through our website, sending us an email at support@example.com,
-              or calling our dedicated support hotline at +1-123-456-7890.
+              through our website, sending us an email at info@scientistx.tech,
+              or calling our dedicated support hotline at +1646-704-8275.
             </p>
           )}
         </div>
