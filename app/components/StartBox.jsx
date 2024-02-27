@@ -100,7 +100,7 @@ export default function StartBox() {
                   <div className="flex  items-center gap-2">
                     <Link
                       className="px-6 py-2 text-[16px] font-normal cursor-pointer rounded-sm  bg-[#1B75BC]"
-                      href="/pages/Login"
+                      href="/pages/LogIn"
                     >
                       Login Here
                     </Link>
