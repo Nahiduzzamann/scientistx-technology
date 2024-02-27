@@ -1,6 +1,6 @@
 "use client";
 import * as THREE from "three";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useLayoutEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
   useGLTF,
@@ -10,12 +10,51 @@ import {
   ContactShadows,
   PerspectiveCamera,
   useAnimations,
+  ScrollControls,
+  Loader,
 } from "@react-three/drei";
+import LoadingScreen from "./LoadingScreen"
 
+
+
+export default function Viewer() {
+  const [loaded, setLoaded] = useState(false);
+
+  return (
+    <>
+      <Canvas camera={{ position: [5, 5, 2], fov: 60 }}>
+        <ambientLight intensity={0.5} />
+
+        <Environment preset="sunset" />
+        <ContactShadows
+          frames={1}
+          scale={5}
+          position={[0, -1, 0]}
+          far={1}
+          blur={5}
+          opacity={0.5}
+          color="#204080"
+        />
+        <OrbitControls />
+        <Suspense fallback={null}>
+          <Model position={[1, 0, 0]} />
+        </Suspense>
+        {/* <Loader/> */}
+      </Canvas>
+      <Loader/>
+    </>
+  );
+}
 function Model(props) {
   const group = useRef();
+
   const { nodes, materials, animations } = useGLTF("/new.gltf");
   const { actions } = useAnimations(animations, group);
+
+  useEffect(() => {
+    actions["Turn"].play();
+  }, []);
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
@@ -5436,27 +5475,5 @@ function Model(props) {
         </group>
       </group>
     </group>
-  );
-}
-
-export default function Viewer() {
-  const [loaded, setLoaded] = useState(true);
-
-  return (
-    <Canvas camera={{ position: [5, 5, 2], fov: 60 }}>
-      <ambientLight intensity={0.5} />
-      <Model position={[1, 0, 0]} />
-      <Environment preset="sunset"/>
-      <ContactShadows
-          frames={1}
-          scale={5}
-          position={[0, -1, 0]}
-          far={1}
-          blur={5}
-          opacity={0.5}
-          color="#204080"
-        />
-      <OrbitControls />
-    </Canvas>
   );
 }
