@@ -1,6 +1,5 @@
 import React from "react";
 import Svg23 from "./asset/Svg23";
-import Svg24 from "./asset/Svg24";
 import Svg25 from "./asset/Svg25";
 import Svg26 from "./asset/Svg26";
 import Svg27 from "./asset/Svg27";
@@ -49,7 +48,7 @@ function ProceduralAndTechnologies() {
                 with our business goals and market needs.
               </p>
               <div>
-                <Svg24></Svg24>
+              <Image src={require('../components/asset/BusinessAnalysis.svg')} alt="image"></Image>
                 <p className="text-center text-[16px] font-normal mt-1 text-[#FFCA27]">
                   Business Analysis
                 </p>

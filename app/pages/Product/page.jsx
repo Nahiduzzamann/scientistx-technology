@@ -6,10 +6,8 @@ import Svg17 from "../../components/asset/Svg17";
 import Svg18 from "../../components/asset/Svg18";
 import Svg19 from "../../components/asset/Svg19";
 import Svg20 from "../../components/asset/Svg20";
-import Svg21 from "../../components/asset/Svg21";
-import Svg22 from "../../components/asset/Svg22";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import React, { useRef } from "react";
+import Image from "next/image";
 
 export default function Product() {
   const parallaxRef = useRef();
@@ -76,7 +74,7 @@ export default function Product() {
             <CardService
             route="https://writerfair.com/"
               isButton={true}
-              img={<Svg21></Svg21>}
+              img={<Image src={require('../../components/asset/ReadingContent.svg')} alt="icon"></Image>}
               title="Online Reading Content"
               description="Immerse yourself in a world of stories, knowledge, and inspiration with our online reading content platform. Access a diverse collection of articles, blogs, books, and magazines on topics ranging from literature and history to science and technology."
             ></CardService>
