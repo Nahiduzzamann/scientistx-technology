@@ -41,7 +41,7 @@ export default function Viewer() {
         </Suspense>
         {/* <Loader/> */}
       </Canvas>
-      <Loader/>
+      <Loader />
     </>
   );
 }

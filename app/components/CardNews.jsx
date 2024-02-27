@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-function CardNews({ title, description, img }) {
+function CardNews({ title, description, img,date }) {
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -27,7 +27,7 @@ function CardNews({ title, description, img }) {
         </div>
       )}
       <p className="md:text-[16px] text-[14px] mt-1 text-[#ffffff] font-normal">
-        32 min ago
+        {new Date(date).toUTCString()}
       </p>
       {img && <Image src={img} alt="news image" className="mt-3"></Image>}
     </div>
