@@ -4,7 +4,6 @@ import CardService from "../../components/CardService";
 import Svg1 from "../../components/asset/Svg6";
 import Svg2 from "../../components/asset/Svg10";
 import Svg3 from "../../components/asset/Svg11";
-import Svg4 from "../../components/asset/Svg12";
 import Svg5 from "../../components/asset/Svg13";
 import Svg6 from "../../components/asset/Svg14";
 import Svg7 from "../../components/asset/Svg15";
@@ -12,6 +11,7 @@ import Svg7 from "../../components/asset/Svg15";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import React, { useRef } from "react";
+import Image from "next/image";
 
 export default function Service() {
   const parallaxRef = useRef();
@@ -31,7 +31,7 @@ export default function Service() {
             }
           </p>
         </div>
-        <div className=" text-white flex flex-wrap justify-center md:gap-6 gap-4">
+        <div className=" text-white flex flex-wrap justify-center md:gap-10 gap-4">
           <CardService
             img={<Svg1></Svg1>}
             title="Apps Development"
@@ -48,7 +48,7 @@ export default function Service() {
             description="Build a strong online presence with our custom web development solutions. Whether it's a dynamic website or a robust e-commerce platform, we leverage the latest technologies to create responsive and scalable web solutions tailored to your needs."
           ></CardService>
           <CardService
-            img={<Svg4></Svg4>}
+              img={<Image src={require('../../components/asset/SmartDevice.svg')} alt="Maintanance"></Image>}
             title="Smart Device and IOT"
             description="Embrace the future of connectivity with our smart device and IoT solutions. From smart home automation to industrial IoT applications, we design and deploy intelligent systems that optimize efficiency and enhance convenience."
           ></CardService>
@@ -68,13 +68,13 @@ export default function Service() {
             description="Stay ahead of the competition with our SEO and research services. We analyze market trends, conduct keyword research, and optimize your online presence to improve search engine rankings and drive organic traffic."
           ></CardService>
           <CardService
-            img={<Svg7></Svg7>}
+            img={<Image src={require('../../components/asset/Management.svg')} alt="Maintanance"></Image>}
             title="Project Management"
             description="Ensure project success with our professional project management services. From planning and execution to monitoring and delivery, we provide expert guidance and oversight to keep your projects on track and within budget."
           ></CardService>
           <CardService
-            img={<Svg7></Svg7>}
-            title="Maintanance"
+            img={<Image src={require('../../components/asset/Maintanance.svg')} alt="Maintanance"></Image>}
+            title="Project Maintanance"
             description="Keep your digital assets running smoothly with our maintenance services. From software updates to troubleshooting, we provide proactive maintenance solutions to ensure optimal performance and reliability."
           ></CardService>
         </div>
