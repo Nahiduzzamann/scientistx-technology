@@ -13,7 +13,7 @@ function FAQ() {
   };
   return (
     <div className=" flex items-center text-white container mx-auto  pt-16 md:pt-24 px-2">
-      <div className="w-full p-8">
+      <div className="w-full border border-white rounded-lg p-8">
         <h1 className="text-3xl font-semibold mb-6 text-center">Frequently Asked Questions</h1>
 
         {/* FAQ 1 */}

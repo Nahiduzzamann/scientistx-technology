@@ -177,21 +177,21 @@ const Footer = () => {
             </p>
           </Link>
 
-          <Link href="/pages/Dummy">
+          <Link href="/pages/PrivacyPolicy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Privacy Policy
             </p>
           </Link>
 
-          <Link href="/pages/Dummy">
+          <Link href="/pages/CustomerPolicy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Customer Policy
             </p>
           </Link>
 
-          <Link href="/pages/Dummy">
+          <Link href="/pages/OrderPolicy">
             {" "}
             <p className="text-[16px] hover:text-white text-[#1B75BC] font-normal  mt-[10px]">
               Order Policy
