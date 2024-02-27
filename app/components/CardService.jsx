@@ -13,8 +13,8 @@ function CardService({ img, title, description,isButton, route }) {
         {description}
       </p>
       {
-        isButton && <div className="flex justify-center mt-3">
-        <Link href={`${route}`} className="px-8 py-2 bg-white  text-black font-light text-[15px]">View</Link>
+        isButton && <div className="flex justify-center mt-3 bg-white rounded">
+        <a href={`${route}`} target="blank" className="px-8 py-2   text-black font-light text-[15px]">View</a>
       </div>
       }
       
