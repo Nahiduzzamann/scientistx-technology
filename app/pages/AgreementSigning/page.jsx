@@ -1,5 +1,5 @@
 function AgreementSigning() {
-  return <div className="min-h-screen flex justify-center items-center text-white">
+  return <div className="min-h-screen flex justify-center items-center text-white pt-20 md:pt-24">
   <div className=" p-8 border border-white rounded-lg shadow-lg">
     <h1 className="text-3xl font-bold mb-6">Agreement Signing</h1>
     <p className="text-lg mb-6">

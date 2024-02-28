@@ -1,5 +1,5 @@
 function PrivacyPolicy() {
-    return ( <div className="container mx-auto  pt-16 md:pt-24 px-2 flex justify-center items-center text-white">
+    return ( <div className="container mx-auto  pt-20 md:pt-24 px-2 flex justify-center items-center text-white">
     <div className="border border-white rounded-lg p-8">
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 

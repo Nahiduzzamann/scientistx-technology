@@ -1,6 +1,6 @@
 function OrderPolicy() {
   return (
-    <div className="min-h-screen flex justify-center items-center container mx-auto text-white pt-16 md:pt-24 px-2">
+    <div className="min-h-screen flex justify-center items-center container mx-auto text-white pt-20 md:pt-24 px-2">
       <div className="border border-white rounded-lg p-8">
         <h1 className="text-3xl font-bold mb-6">Order Policy</h1>
 
