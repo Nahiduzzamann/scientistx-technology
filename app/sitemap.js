@@ -18,5 +18,23 @@ export default function sitemap() {
         changeFrequency: 'weekly',
         priority: 0.5,
       },
+      {
+        url: 'https://scientistx.tech/pages/About',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.5,
+      },
+      {
+        url: 'https://scientistx.tech/pages/CustomerPolicy',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.5,
+      },
+      {
+        url: 'https://scientistx.tech/pages/News',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.5,
+      },
     ]
   }
