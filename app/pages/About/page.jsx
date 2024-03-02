@@ -93,7 +93,7 @@ function page() {
           name="Md. Nahiduzzaman"
           post="Chief Technology Officer(CTO)"
           email="nahid@scientistx.tech"
-          text="..........."
+          text="Cultivate diligence as a routine, and life will blossom with beauty"
         />
         <AboutCart onClick={()=>window.open("https://sazzad-19.web.app","_blank")}
           img={require("../../../public/myimage.jpg")}
@@ -102,13 +102,13 @@ function page() {
           email="sazzad@scientistx.tech"
           text="Life is a poetry about yourself in where you are a visitor only"
         />
-        <AboutCart
+        {/* <AboutCart
           img={Img1}
           name="MD Saibur Rahman"
           post="Chief Executing Officer"
           email="saibur@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
-        />
+        /> */}
         <AboutCart onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
           img={akash}
           name="Tasnim Shahriar Akash"
