@@ -112,9 +112,9 @@ function page() {
         <AboutCart onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
           img={akash}
           name="Tasnim Shahriar Akash"
-          post="..r"
+          post="Managing Director (MD)"
           email="akash@scientistx.tech"
-          text=".."
+          text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
         />
       </div>
     </div>
