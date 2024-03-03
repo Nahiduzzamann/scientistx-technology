@@ -4,7 +4,7 @@ function AgreementSigning() {
     <h1 className="text-3xl font-bold mb-6">Agreement Signing</h1>
     <p className="text-lg mb-6">
       Welcome to ScientistX Technology! By signing this agreement, you agree
-      to abide by the terms and conditions outlined below:
+      to abide by the terms and conditions outlined below-
     </p>
     <ul className="list-disc ml-8 mb-6">
       <li className="mb-2">You agree to use the services provided by Scientistx Technology solely for personal use and not for any commercial purposes.</li>
