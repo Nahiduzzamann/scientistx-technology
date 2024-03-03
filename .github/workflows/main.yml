@@ -23,10 +23,11 @@ jobs:
         key: ${{ secrets.SERVER }}
         port: 22
         script: |
-          
+          PATH=$PATH:/root/.nvm/versions/node/v21.6.2/bin
           cd scientistx-technology
           git pull origin master
-          git status
           npm i
           npm run build
+          pm2 stop 2
+          pm2 start 2
           
