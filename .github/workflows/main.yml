@@ -29,5 +29,4 @@ jobs:
           git status
           npm i
           npm run build
-          pm2 stop 2
-          pm2 start 2
+          
