@@ -23,13 +23,14 @@ import img18 from "../../public/adobe-xd-svgrepo-com.png";
 import img19 from "../../public/Adobe premiere pro.png";
 import img20 from "../../public/Adobe After effect 1.png";
 import img21 from "../../public/Adobe illustrator.png";
-import img22 from "../../public/Firebase.png";
+import img22 from "../../public/figma.png";
 import img23 from "../../public/aws-svgrepo-com.png";
 import img24 from "../../public/Firebase.png";
 import img25 from "../../public/Windows.png";
 import img26 from "../../public/socket-dot-io-svgrepo-com.png";
 import img27 from "../../public/webrtc.png";
 import img28 from "../../public/linux-svgrepo-com.png";
+import img29 from "../../public/node-js-svgrepo-com (1) 1.png";
 
 export default function Technologies() {
   return (
@@ -173,6 +174,14 @@ export default function Technologies() {
           <div className="md:mt-10 mt-4">
             <p className="mb-2">Web Development Technologiess</p>
             <div className="text-white flex flex-wrap gap-8 md:gap-12 border-t-2 border-t-[#1B75BC] py-4">
+            <div className="flex flex-col items-center">
+                <Image
+                  className="h-10 md:h-17 w-10 md:w-17"
+                  src={img29}
+                  alt="technology"
+                ></Image>
+                <p className="text-center ">Node JS</p>
+              </div>
               <div className="flex flex-col items-center">
                 <Image
                   className="h-10 md:h-17 w-10 md:w-17"
