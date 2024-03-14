@@ -116,6 +116,14 @@ function page() {
           email="akash@scientistx.tech"
           text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
         />
+        <AboutCart 
+        //onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
+          //img={akash}
+          name="Rana Mirja"
+          post="Head of Marketing"
+          email="rana@scientistx.tech"
+          text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
+        />
       </div>
     </div>
   );
