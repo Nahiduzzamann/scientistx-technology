@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Scientistx Technology | Success your ideas with us ",
-  description: "ScientistX is a multinational consortium founded by the ScientistX Group in 2021 with the aim of leveraging technology to empower humanity. This visionary initiative seeks to harness the power of cutting-edge technology to address pressing global challenges and enhance the well-being of individuals and communities worldwide. Through collaborative research, innovation, and the application of scientific advancements, ScientistX endeavors to foster positive societal change and promote sustainable development. By bringing together leading experts, organizations, and stakeholders across various disciplines, ScientistX is poised to drive transformative progress in fields ranging from healthcare and education to environmental conservation and beyond. With a steadfast commitment to advancing the greater good, ScientistX is dedicated to shaping a brighter future for all through the intersection of science, technology, and humanity." ,
+  description: "ScientistX is a multinational consortium founded by the ScientistX Group in 2021 with the aim of leveraging technology to empower humanity. This visionary initiative seeks to harness the power of cutting-edge technology to address pressing global challenges and enhance the well-being of individuals and communities worldwide." ,
   keywords:"scientistx, scientistx technology, tech, technology, software, scientistx tech, scientistx technology, scientist, scientist technology, web development, app development, iot, management",
   twitter:{
     card:"summary_large_image",
