@@ -5,6 +5,7 @@ import Image from "next/image";
 import Img1 from "../../../public/image 29.png";
 import nahid from "../../../public/nahid.jpg";
 import akash from "../../../public/Akash Profile.jpg";
+import emon from "../../../public/Screenshot 2025-07-29 at 3.55.01 PM.png";
 
 function page() {
   return (
@@ -78,12 +79,12 @@ function page() {
       </div>
 
       <div className=" grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2  gap-4">
-        <AboutCart
-          img={require("../../../public/monju.jpeg")}
-          name="Monjurul Islam"
-          post="Chief Executing Officer"
-          email="monjurul@scientistx.tech"
-          text="Life is full of beautiful journey if you can handle your emotions"
+       <AboutCart onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
+          img={akash}
+          name="Tasnim Shahriar Akash"
+          post="Managing Director (MD)"
+          email="akash@scientistx.org"
+          text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
         />
         <AboutCart
           onClick={() =>
@@ -91,15 +92,15 @@ function page() {
           }
           img={nahid}
           name="Md. Nahiduzzaman"
-          post="Chief Technology Officer(CTO)"
-          email="nahid@scientistx.tech"
+          post="Chief Executing Office (CEO)"
+          email="nahid@scientistx.org"
           text="Cultivate diligence as a routine, and life will blossom with beauty"
         />
         <AboutCart onClick={()=>window.open("https://sazzad-19.web.app","_blank")}
           img={require("../../../public/myimage.jpg")}
           name="MD SAZZAD HOSSAIN"
-          post="Head Of Training and Development"
-          email="sazzad@scientistx.tech"
+          post="Chief Technology Officer (CTO)"
+          email="sazzad@scientistx.org"
           text="Life is a poetry about yourself in where you are a visitor only"
         />
         {/* <AboutCart
@@ -109,19 +110,13 @@ function page() {
           email="saibur@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
         /> */}
-        <AboutCart onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
-          img={akash}
-          name="Tasnim Shahriar Akash"
-          post="Managing Director (MD)"
-          email="akash@scientistx.tech"
-          text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
-        />
+        
         <AboutCart 
         //onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
-          //img={akash}
-          name="Rana Mirja"
+          img={emon}
+          name="EmOn"
           post="Head of Marketing"
-          email="rana@scientistx.tech"
+          email="emon@scientistx.org"
           text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
         />
       </div>
